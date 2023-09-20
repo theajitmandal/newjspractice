@@ -23,9 +23,14 @@
 
 const myNumber1 = [2,7,1,8,10,5,3];
 
-const newArr = myNumber1.map((element) => element*2).filter((element) => element>10);
+// const newArr = myNumber1.map((element) => element*2).filter((element) => element>10);
 
-console.log(newArr);
+// console.log(newArr);
+
+const newArray = myNumber1.map((element) => element * 3).filter((element) => element>20);
+const newArray2 = myNumber1.map((element) => element * 3).filter((element) => element>20).reduce((accumulator, element, index, array) => accumulator += element);
+console.log(newArray);
+console.log(newArray2);
 
 
 
