@@ -42,12 +42,12 @@
 // console.log(myNewNumber);
 
 //slice
-const newNumber = ["apple", "banana", "orange", "mango"];
+// const newNumber = ["apple", "banana", "orange", "mango"];
 
-const newArr = newNumber.slice(2);
+// const newArr = newNumber.slice(2);
 
-console.log(newNumber);
-console.log(newArr);
+// console.log(newNumber);
+// console.log(newArr);
 
 //forEach & map
 // const newNumber = [17, 45, 67, 12, 30];
@@ -73,6 +73,12 @@ console.log(newArr);
 // console.log(reduceArray);
 
 // console.log(newNumber.map((element) => element*2).filter((element) => element>50).reduce((acc, element) => acc += element));
+
+//escape character
+
+let text = "Hello I am \"Ajit\" from \' Itahari I \\ am coming kathmandu";
+
+console.log(text);
 
 
 
