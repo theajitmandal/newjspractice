@@ -76,9 +76,79 @@
 
 //escape character
 
-let text = "Hello I am \"Ajit\" from \' Itahari I \\ am coming kathmandu";
+// let text = "Hello I am \"Ajit\" from \' Itahari I \\ am coming kathmandu";
 
-console.log(text);
+// console.log(text);
+
+//slice
+// let text = "Apple, Banana, Grapes, Orange";
+
+// let newtext = text.slice(7);
+// let newtext1 = text.slice(7,13);
+// let newtext2 = text.slice(-6);
+// let newtext4 = text.slice(-14,-8); 
+
+//substring
+// let newtext5 = text.substring(4,8);
+// let newtext6 = text.substring(-4,-9); //doestnot take negative values and this variable prints blank
+
+// //substr
+// let newtext7 = text.substr(7, 6);
+
+// console.log(newtext);
+// console.log(newtext1);
+// console.log(newtext2);
+// console.log(newtext4);
+// console.log(newtext5);
+// console.log(newtext6); //prints nothing blank
+// console.log(newtext7);
+
+//replace
+// let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+
+// let newText = text.replace("Banana", "Litchi");
+// let newText1 = text.replace(/BANANA/i, "Litchi");
+// let newText2 = text.replace(/Banana/g, "Pomegranate"); //combine two RE use /BANANA/gi
+
+// console.log(newText);
+// console.log(newText1);
+// console.log(newText2);
+
+//split -> converting strings into Arrays
+// let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+
+// let newText = text.split(","); //splits at comma
+// let newText1 = text.split(" "); //splits at space
+// let newText2 = text.split("|"); //splits at pipe
+// let newText3 = text.split(""); //splits into array of single character
+// let newText4 = text.split(); //if separator is ommitted then the whole string is in index[0]
+
+// console.log(newText);
+// console.log(newText1);
+// console.log(newText2);
+// console.log(newText3);
+// console.log(newText4);
+
+//string search
+let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+
+console.log(text.indexOf("banana"));
+console.log(text.lastIndexOf("Banana"));
+console.log(text.search("Grapes"));
+
+let newText = text.match("App");
+console.log(`The new arrary after match method is ${newText} and its length is ${newText.length}`);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
