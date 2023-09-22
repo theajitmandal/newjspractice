@@ -130,14 +130,49 @@
 // console.log(newText4);
 
 //string search
-let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+// let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
 
-console.log(text.indexOf("banana"));
-console.log(text.lastIndexOf("Banana"));
-console.log(text.search("Grapes"));
+// console.log(text.indexOf("banana"));
+// console.log(text.lastIndexOf("Banana"));
+// console.log(text.search("Grapes"));
 
-let newText = text.match("App");
-console.log(`The new arrary after match method is ${newText} and its length is ${newText.length}`);
+// let newText = text.match("App");
+// console.log(`The new arrary after match method is ${newText} and its length is ${newText.length}`);
+
+//bitwise
+// let x = 5;
+// let y = 1;
+// console.log(x & y);
+
+
+// try{
+//     consolle.log("This is error");
+// }
+// catch(err){
+//     console.log(err);
+// }
+
+// let x = 123.42567;
+// let m = 123.42567;
+// let y = x.toString();
+
+// console.log(x);
+// console.log(typeof(y));
+
+// let z = x.toExponential(2);
+// console.log(z);
+
+// let p = x.toFixed(3);
+// console.log(p);
+
+// let q = x.toPrecision(4);
+// console.log(q);
+
+// //run and check gives error may be important for interview
+// let r = m.toPrecision(2);
+// console.log(r);
+
+
 
 
 
