@@ -196,9 +196,10 @@
 // let d = new Date(0);
 // console.log(d.toLocaleString());
 
-console.log(new Date().toLocaleTimeString());
-console.log(new Date().toLocaleDateString());
-console.log(new Date().toLocaleString());
+// console.log(new Date().toLocaleTimeString());
+// console.log(new Date().toLocaleDateString());
+// console.log(new Date().toLocaleString());
+
 
 
 
