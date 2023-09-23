@@ -176,17 +176,23 @@
 
 //dates
 
-let d = new Date(); //converts into string automatically if displayed in html
-let f = d.toString();
-let g = d.toDateString();
-let h = d.toISOString();
-let i = d.toUTCString();
+// let d = new Date(); //converts into string automatically if displayed in html
+// let f = d.toString();
+// let g = d.toDateString();
+// let h = d.toISOString();
+// let i = d.toUTCString();
 
-console.log(d);
-console.log(f);
-console.log(g);
-console.log(h);
-console.log(i);
+// console.log(d);
+// console.log(f);
+// console.log(g);
+// console.log(h);
+// console.log(i);
+
+let currDate = new Date();
+console.log(currDate);
+console.log(currDate.toLocaleString());
+console.log(currDate.toString());
+
 
 
 
