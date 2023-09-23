@@ -188,11 +188,17 @@
 // console.log(h);
 // console.log(i);
 
-let currDate = new Date();
-console.log(currDate);
-console.log(currDate.toLocaleString());
-console.log(currDate.toString());
+// let currDate = new Date();
+// console.log(currDate);
+// console.log(currDate.toLocaleString());
+// console.log(currDate.toString());
 
+// let d = new Date(0);
+// console.log(d.toLocaleString());
+
+console.log(new Date().toLocaleTimeString());
+console.log(new Date().toLocaleDateString());
+console.log(new Date().toLocaleString());
 
 
 
