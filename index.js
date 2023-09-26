@@ -201,7 +201,25 @@
 // console.log(new Date().toLocaleString());
 
 
+let x = 123.42567;
+let m = 123.42567;
+let y = x.toString();
 
+console.log(x);
+console.log(typeof(y));
+
+let z = x.toExponential(2);
+console.log(z);
+
+let p = x.toFixed(3);
+console.log(p);
+
+let q = x.toPrecision(4);
+console.log(q);
+
+//run and check gives error may be important for interview
+let r = m.toPrecision(2);
+console.log(r);
 
 
 
