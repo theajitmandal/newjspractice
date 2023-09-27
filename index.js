@@ -256,10 +256,14 @@
 // console.log(text.search("Grapes"));
 
 //bitwise
-let x = 5;
-let y = 1;
-console.log(x & y);
+// let x = 5;
+// let y = 1;
+// console.log(x & y);
 
+let currDate = new Date();
+console.log(currDate);
+console.log(currDate.toLocaleString());
+console.log(currDate.toString());
 
 
 
