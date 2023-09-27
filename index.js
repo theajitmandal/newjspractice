@@ -249,11 +249,16 @@
 // console.log(newText2);
 
 //string search
-let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+// let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
 
-console.log(text.indexOf("banana"));
-console.log(text.lastIndexOf("Banana"));
-console.log(text.search("Grapes"));
+// console.log(text.indexOf("banana"));
+// console.log(text.lastIndexOf("Banana"));
+// console.log(text.search("Grapes"));
+
+//bitwise
+let x = 5;
+let y = 1;
+console.log(x & y);
 
 
 
