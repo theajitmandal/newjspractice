@@ -221,22 +221,39 @@
 // let r = m.toPrecision(2);
 // console.log(r);
 
-let x = 123.42567;
-let m = 123.42567;
-let y = x.toString();
+// let x = 123.42567;
+// let m = 123.42567;
+// let y = x.toString();
 
-console.log(x);
-console.log(typeof(y));
+// console.log(x);
+// console.log(typeof(y));
 
-let z = x.toExponential(2);
-console.log(z);
+// let z = x.toExponential(2);
+// console.log(z);
 
-let p = x.toFixed(3);
-console.log(p);
+// let p = x.toFixed(3);
+// console.log(p);
 
-let q = x.toPrecision(4);
-console.log(q);
+// let q = x.toPrecision(4);
+// console.log(q);
 
+//replace
+// let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+
+// let newText = text.replace("Banana", "Litchi");
+// let newText1 = text.replace(/BANANA/i, "Litchi");
+// let newText2 = text.replace(/Banana/g, "Pomegranate"); //combine two RE use /BANANA/gi
+
+// console.log(newText);
+// console.log(newText1);
+// console.log(newText2);
+
+//string search
+let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+
+console.log(text.indexOf("banana"));
+console.log(text.lastIndexOf("Banana"));
+console.log(text.search("Grapes"));
 
 
 
