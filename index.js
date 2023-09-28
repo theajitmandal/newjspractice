@@ -267,12 +267,21 @@
 
 
 //slice
-let text = "Apple, Banana, Grapes, Orange";
+// let text = "Apple, Banana, Grapes, Orange";
 
-let newtext = text.slice(7);
-let newtext1 = text.slice(7,13);
-let newtext2 = text.slice(-6);
-let newtext4 = text.slice(-14,-8); 
+// let newtext = text.slice(7);
+// let newtext1 = text.slice(7,13);
+// let newtext2 = text.slice(-6);
+// let newtext4 = text.slice(-14,-8); 
+
+//split -> converting strings into Arrays
+let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+
+let newText = text.split(","); //splits at comma
+let newText1 = text.split(" "); //splits at space
+let newText2 = text.split("|"); //splits at pipe
+let newText3 = text.split(""); //splits into array of single character
+let newText4 = text.split(); //if separator is ommitted then the whole string is in index[0]
 
 
 
