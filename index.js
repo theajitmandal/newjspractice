@@ -275,13 +275,23 @@
 // let newtext4 = text.slice(-14,-8); 
 
 //split -> converting strings into Arrays
-let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
+// let text = "Apple, banana, Grapes, Orange, Banana, Litchi, Banana";
 
-let newText = text.split(","); //splits at comma
-let newText1 = text.split(" "); //splits at space
-let newText2 = text.split("|"); //splits at pipe
-let newText3 = text.split(""); //splits into array of single character
-let newText4 = text.split(); //if separator is ommitted then the whole string is in index[0]
+// let newText = text.split(","); //splits at comma
+// let newText1 = text.split(" "); //splits at space
+// let newText2 = text.split("|"); //splits at pipe
+// let newText3 = text.split(""); //splits into array of single character
+// let newText4 = text.split(); //if separator is ommitted then the whole string is in index[0]
+
+numbers1 = [45, 10, 2, 9, 15];
+
+console.log(numbers1.filter((element) => element > 5));
+
+
+
+numbers = [2, 3, 4, 5, 6, 1];
+
+console.log(numbers.map((element) => element > 5))
 
 
 
