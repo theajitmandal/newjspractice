@@ -283,25 +283,35 @@
 // let newText3 = text.split(""); //splits into array of single character
 // let newText4 = text.split(); //if separator is ommitted then the whole string is in index[0]
 
+// numbers1 = [45, 10, 2, 9, 15];
+
+// console.log(numbers1.filter((element) => element > 5));
+
+
+
+// numbers = [2, 3, 4, 5, 6, 1];
+
+// console.log(numbers.map((element) => element > 5))
+
+// numbers2 = numbers1.find((currVal) => {
+//     return currVal > 5;
+// });
+
+// console.log(numbers2);
+
+// numbers2 = numbers1.find((currVal) => currVal < 10);
+
+// console.log(numbers1.find((element) => element < 5));
+
+// console.log(numbers2);
+
 numbers1 = [45, 10, 2, 9, 15];
 
-console.log(numbers1.filter((element) => element > 5));
+const numbers2 = numbers1.find(myFunction);
 
-
-
-numbers = [2, 3, 4, 5, 6, 1];
-
-console.log(numbers.map((element) => element > 5))
-
-numbers2 = numbers1.find((currVal) => {
-    return currVal > 5;
-});
-
-console.log(numbers2);
-
-numbers2 = numbers1.find((currVal) => currVal < 10);
-
-console.log(numbers1.find((element) => element < 5));
+function myFunction(element, index, arrary){
+    return element > 12;
+}
 
 console.log(numbers2);
 
