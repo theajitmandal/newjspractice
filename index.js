@@ -293,6 +293,18 @@ numbers = [2, 3, 4, 5, 6, 1];
 
 console.log(numbers.map((element) => element > 5))
 
+numbers2 = numbers1.find((currVal) => {
+    return currVal > 5;
+});
+
+console.log(numbers2);
+
+numbers2 = numbers1.find((currVal) => currVal < 10);
+
+console.log(numbers1.find((element) => element < 5));
+
+console.log(numbers2);
+
 
 
 
