@@ -341,15 +341,18 @@
 // })
 
 //splice
-let newNumber = [17, 45, 67, 12, 30];
-let newNumber1 = ["apple", "banana", "orange", "mango"];
+// let newNumber = [17, 45, 67, 12, 30];
+// let newNumber1 = ["apple", "banana", "orange", "mango"];
 
-const myNewNumber = newNumber.splice(2, 1, "grapes", "watermelon");
+// const myNewNumber = newNumber.splice(2, 1, "grapes", "watermelon");
 
+//slice
+let text = "Apple, Banana, Grapes, Orange";
 
-
-
-
+let newtext = text.slice(7);
+let newtext1 = text.slice(7,13);
+let newtext2 = text.slice(-6);
+let newtext4 = text.slice(-14,-8); 
 
 
 
