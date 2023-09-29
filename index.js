@@ -305,16 +305,33 @@
 
 // console.log(numbers2);
 
-numbers1 = [45, 10, 2, 9, 15];
+// numbers1 = [45, 10, 2, 9, 15];
 
-const numbers2 = numbers1.find(myFunction);
+// const numbers2 = numbers1.find(myFunction);
 
-function myFunction(element, index, arrary){
-    return element > 12;
+// function myFunction(element, index, arrary){
+//     return element > 12;
+// }
+
+// console.log(numbers2);
+
+//checking leap year or not
+
+var year = 2000;
+debugger;
+if (year % 4 === 0) {
+  if (year % 100 === 0) {
+    if (year % 400 === 0) {
+      console.log("The year " + year + " is a leap year");
+    } else {
+      console.log("The year " + year + " is not a leap year");
+    }
+  } else {
+    console.log("The year " + year + " is a leap year");
+  }
+} else {
+  console.log("The year " + year + " is not a leap year");
 }
-
-console.log(numbers2);
-
 
 
 
