@@ -317,21 +317,28 @@
 
 //checking leap year or not
 
-var year = 2000;
-debugger;
-if (year % 4 === 0) {
-  if (year % 100 === 0) {
-    if (year % 400 === 0) {
-      console.log("The year " + year + " is a leap year");
-    } else {
-      console.log("The year " + year + " is not a leap year");
-    }
-  } else {
-    console.log("The year " + year + " is a leap year");
-  }
-} else {
-  console.log("The year " + year + " is not a leap year");
-}
+// var year = 2000;
+// debugger;
+// if (year % 4 === 0) {
+//   if (year % 100 === 0) {
+//     if (year % 400 === 0) {
+//       console.log("The year " + year + " is a leap year");
+//     } else {
+//       console.log("The year " + year + " is not a leap year");
+//     }
+//   } else {
+//     console.log("The year " + year + " is a leap year");
+//   }
+// } else {
+//   console.log("The year " + year + " is not a leap year");
+// }
+
+//map
+myNumber1 = [2,7,1,8,10,5,3];
+
+mapMyNumber1 = myNumber1.map((element, index, arrary) => {
+    return element > 5;
+})
 
 
 
