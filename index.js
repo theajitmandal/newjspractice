@@ -334,11 +334,17 @@
 // }
 
 //map
-myNumber1 = [2,7,1,8,10,5,3];
+// myNumber1 = [2,7,1,8,10,5,3];
 
-mapMyNumber1 = myNumber1.map((element, index, arrary) => {
-    return element > 5;
-})
+// mapMyNumber1 = myNumber1.map((element, index, arrary) => {
+//     return element > 5;
+// })
+
+//splice
+let newNumber = [17, 45, 67, 12, 30];
+let newNumber1 = ["apple", "banana", "orange", "mango"];
+
+const myNewNumber = newNumber.splice(2, 1, "grapes", "watermelon");
 
 
 
