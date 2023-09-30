@@ -378,7 +378,7 @@ let newtext7 = text.substr(7, 6);
 
 
 
-
+console.log(newtext5);
 
 
 
