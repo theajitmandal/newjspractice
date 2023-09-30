@@ -357,9 +357,18 @@
 
 //escape character
 
-let text = "Hello I am \"Ajit\" from \' Itahari I \\ am coming kathmandu";
+// let text = "Hello I am \"Ajit\" from \' Itahari I \\ am coming kathmandu";
 
-console.log(text);
+// console.log(text);
+
+//slice
+let text = "Apple, Banana, Grapes, Orange";
+
+let newtext = text.slice(7);
+let newtext1 = text.slice(7,13);
+let newtext2 = text.slice(-6);
+let newtext4 = text.slice(-14,-8); 
+
 
 
 
