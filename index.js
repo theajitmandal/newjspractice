@@ -376,9 +376,9 @@ let newtext6 = text.substring(-4,-9); //doestnot take negative values and this v
 //substr
 let newtext7 = text.substr(7, 6);
 
-
-
 console.log(newtext5);
+console.log(newtext6);
+console.log(newtext7);
 
 
 
