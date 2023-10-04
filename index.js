@@ -390,6 +390,13 @@ myName();
 
 
 //more examples on this
+// const obj = {
+//     myAge : 26,
+//     myName : () => {
+//         console.log(this);
+//     }
+// }
+// obj.myName(); ///gives {}
 
 
 
