@@ -382,11 +382,11 @@
 
 //17th Ashoj 2080
 //this
-var myNames = 'Ajit';
-function myName(){
-    console.log(this.myNames);
-}
-myName();
+// var myNames = 'Ajit';
+// function myName(){
+//     console.log(this.myNames);
+// }
+// myName();
 
 
 //more examples on this
@@ -742,15 +742,15 @@ myName();
 // console.log(numbers2);
 
 
-numbers1 = [45, 10, 2, 9, 15];
+// numbers1 = [45, 10, 2, 9, 15];
 
-console.log(numbers1.filter((element) => element > 5));
+// console.log(numbers1.filter((element) => element > 5));
 
 
 
-numbers = [2, 3, 4, 5, 6, 1];
+// numbers = [2, 3, 4, 5, 6, 1];
 
-console.log(numbers.map((element) => element > 5))
+// console.log(numbers.map((element) => element > 5))
 
 
 //previoud file practice code
@@ -1097,9 +1097,10 @@ console.log(numbers.map((element) => element > 5))
 // console.log(numbers2);
 
 
-numbers1 = [45, 10, 2, 9, 15];
+// numbers1 = [45, 10, 2, 9, 15];
 
-console.log(numbers1.filter((element) => element > 5));
+// console.log(numbers1.filter((element) => element > 5));
+console.log("This all are the code of previous practice");
 
 
 
