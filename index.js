@@ -1103,9 +1103,17 @@
 // console.log("This all are the code of previous practice");
 
 // Create and display a variable:
-let person = "John Doe";
-console.log(person);
+// let person = "John Doe";
+// console.log(person);
 
+const person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age     : 50,
+    eyeColor  : "blue"
+  };
+
+  console.log(person.firstName);
 
 
 
