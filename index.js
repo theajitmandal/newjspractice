@@ -1099,8 +1099,13 @@
 
 // numbers1 = [45, 10, 2, 9, 15];
 
-// console.log(numbers1.filter((element) => element > 5));
-console.log("This all are the code of previous practice");
+// // console.log(numbers1.filter((element) => element > 5));
+// console.log("This all are the code of previous practice");
+
+// Create and display a variable:
+let person = "John Doe";
+console.log(person);
+
 
 
 
