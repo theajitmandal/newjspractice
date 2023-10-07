@@ -1115,6 +1115,7 @@ const person = {
 
   console.log(person.firstName);
   console.log(person.firstName + " is " + person.age + " years old.");
+  console.log(person.lastName);
 
 
 
