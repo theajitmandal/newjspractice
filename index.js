@@ -1121,6 +1121,8 @@ const person = {
   person.fathername = "Manoj";
   console.log(person.fathername);
 
+  console.log(`My eye color is ${person.eyeColor}`);
+
 
 
 
