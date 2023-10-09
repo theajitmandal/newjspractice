@@ -1136,12 +1136,38 @@
 // console.log(myAge);
 // console.log(myDegree);
 
-const person = {
-    firstName : "John",
-    lastName  : "Doe",
-    age     : 50,
-    eyeColor  : "blue"
-  };
+// const person = {
+//     firstName : "John",
+//     lastName  : "Doe",
+//     age     : 50,
+//     eyeColor  : "blue"
+//   };
+
+//   let {myName, lastName, age, eyeColor} = person;
+//   console.log(lastName);
+
+let firstColor = "blue";
+let secondColor = "green";
+
+// const color = {
+//   firstColor : firstColor,
+//   secondColor : secondColor
+// }
+
+//if above key and value are both same then
+// const color = {firstColor, secondColor}; 
+
+// console.log(color.firstColor);
+// console.log(color.secondColor);
+
+
+//spread operator
+
+const colors = ['red', 'green', 'blue', 'white'];
+const myColors = [...colors, 'yellow', 'black'];
+
+console.log(myColors);
+
 
 
 
