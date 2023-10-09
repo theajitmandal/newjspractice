@@ -1163,11 +1163,26 @@ let secondColor = "green";
 
 //spread operator
 
-const colors = ['red', 'green', 'blue', 'white'];
-const myColors = [...colors, 'yellow', 'black'];
+// const colors = ['red', 'green', 'blue', 'white'];
+// const myColors = [...colors, 'yellow', 'black'];
 
-console.log(myColors);
+// console.log(myColors);
 
+//higher order and callback
+const fruits = (fruit1, fruit2 ) => {
+  console.log(`My favourite fruit number is ${fruit1} and second favourite number fruit is ${fruit2}`);
+}
+
+const animal = (animal1, animal2) => {
+  console.log(`My favourite animal number is ${animal1} and second favourite animal number is ${animal2}`);
+}
+
+const printData = (x, y, callback) => {
+  return callback(x, y);
+}
+
+printData(2, 5, fruits);
+printData(3,7, animal);
 
 
 
