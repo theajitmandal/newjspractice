@@ -1190,13 +1190,30 @@ let secondColor = "green";
 // myName = "Ajit";
 
 //hoisting is avoided using let and const, so below code gives error
-console.log(myName);
-let myName;
-myName = "Mandal";
+// console.log(myName);
+// let myName;
+// myName = "Mandal";
 
 // console.log(myNames);
 // const myNames;
 // myNames = "AJitMandal"
+
+
+//asynchronous JS
+
+const func2 = () => {
+  setTimeout(() => {
+    console.log("Function 2 is called")
+  }, 3000);
+}
+
+const func1 = () => {
+  console.log("Function 1 is called");
+  func2();
+  console.log("Function 1 is called again");
+}
+
+func1(); 
 
 
 
