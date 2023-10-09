@@ -1106,23 +1106,34 @@
 // let person = "John Doe";
 // console.log(person);
 
-const person = {
-    firstName : "John",
-    lastName  : "Doe",
-    age     : 50,
-    eyeColor  : "blue"
-  };
+// const person = {
+//     firstName : "John",
+//     lastName  : "Doe",
+//     age     : 50,
+//     eyeColor  : "blue"
+//   };
 
-  console.log(person.firstName);
-  console.log(person.firstName + " is " + person.age + " years old.");
-  console.log(person.lastName);
-  person.age = 20;
-  console.log(person.age);
-  person.fathername = "Manoj";
-  console.log(person.fathername);
+//   console.log(person.firstName);
+//   console.log(person.firstName + " is " + person.age + " years old.");
+//   console.log(person.lastName);
+//   person.age = 20;
+//   console.log(person.age);
+//   person.fathername = "Manoj";
+//   console.log(person.fathername);
 
-  console.log(`My eye color is ${person.eyeColor}`);
+//   console.log(`My eye color is ${person.eyeColor}`);
 
+//array destructuring
+const myBioData = ['Ajit', 'Mandal', 26];
+
+// let myName = myBioData[0];
+// let myLName = myBioData[1];
+// let myAge = myBioData[2];
+
+// console.log(myName);
+
+let [myFName, myLName, myAge] = myBioData;
+console.log(myAge);
 
 
 
