@@ -1124,7 +1124,7 @@
 //   console.log(`My eye color is ${person.eyeColor}`);
 
 //array destructuring
-const myBioData = ['Ajit', 'Mandal', 26];
+// const myBioData = ['Ajit', 'Mandal', 26];
 
 // let myName = myBioData[0];
 // let myLName = myBioData[1];
@@ -1132,8 +1132,16 @@ const myBioData = ['Ajit', 'Mandal', 26];
 
 // console.log(myName);
 
-let [myFName, myLName, myAge] = myBioData;
-console.log(myAge);
+// let [myFName, myLName, myAge, myDegree = 'BSc. CSIT'] = myBioData;
+// console.log(myAge);
+// console.log(myDegree);
+
+const person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age     : 50,
+    eyeColor  : "blue"
+  };
 
 
 
