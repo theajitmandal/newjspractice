@@ -1216,18 +1216,24 @@
 // func1(); 
 
 //function currying
-function sum(num1){
-  // console.log(num1);
-  return function(num2){
-    // console.log(num1, num2);
-    return function(num3){
-      // console.log(num1, num2, num3);
-      console.log(num1 + num2 + num3);
-    }
-  }
-}
+// function sum(num1){
+//   // console.log(num1);
+//   return function(num2){
+//     // console.log(num1, num2);
+//     return function(num3){
+//       // console.log(num1, num2, num3);
+//       console.log(num1 + num2 + num3);
+//     }
+//   }
+// }
 
-sum(3)(4)(5);
+// sum(3)(4)(5);
+
+const sum = (num1) => (num2) => (num3) => console.log(num1 + num2 + num3);
+
+sum(4)(5)(6);
+
+
 
 
 
