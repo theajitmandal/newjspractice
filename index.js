@@ -1146,8 +1146,8 @@
 //   let {myName, lastName, age, eyeColor} = person;
 //   console.log(lastName);
 
-let firstColor = "blue";
-let secondColor = "green";
+// let firstColor = "blue";
+// let secondColor = "green";
 
 // const color = {
 //   firstColor : firstColor,
@@ -1201,20 +1201,33 @@ let secondColor = "green";
 
 //asynchronous JS
 
-const func2 = () => {
-  setTimeout(() => {
-    console.log("Function 2 is called")
-  }, 3000);
+// const func2 = () => {
+//   setTimeout(() => {
+//     console.log("Function 2 is called")
+//   }, 3000);
+// }
+
+// const func1 = () => {
+//   console.log("Function 1 is called");
+//   func2();
+//   console.log("Function 1 is called again");
+// }
+
+// func1(); 
+
+//function currying
+function sum(num1){
+  // console.log(num1);
+  return function(num2){
+    // console.log(num1, num2);
+    return function(num3){
+      // console.log(num1, num2, num3);
+      console.log(num1 + num2 + num3);
+    }
+  }
 }
 
-const func1 = () => {
-  console.log("Function 1 is called");
-  func2();
-  console.log("Function 1 is called again");
-}
-
-func1(); 
-
+sum(3)(4)(5);
 
 
 
