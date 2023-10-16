@@ -1229,9 +1229,19 @@
 
 // sum(3)(4)(5);
 
-const sum = (num1) => (num2) => (num3) => console.log(num1 + num2 + num3);
+// const sum = (num1) => (num2) => (num3) => console.log(num1 + num2 + num3);
 
-sum(4)(5)(6);
+// sum(4)(5)(6);
+
+const person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age     : 50,
+    eyeColor  : "blue"
+  };
+
+  console.log(person.firstName);
+
 
 
 
