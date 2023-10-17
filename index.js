@@ -1233,7 +1233,22 @@
 
 // sum(4)(5)(6);
 
-const person = {
+// const person = {
+//     firstName : "John",
+//     lastName  : "Doe",
+//     age     : 50,
+//     eyeColor  : "blue"
+//   };
+
+//   console.log(person.firstName);
+//     console.log(person.firstName + " is " + person.age + " years old.");
+//   console.log(person.lastName);
+//   person.age = 20;
+//   console.log(person.age);
+//   person.fathername = "Manoj";
+//   console.log(person.fathername);
+
+  const person = {
     firstName : "John",
     lastName  : "Doe",
     age     : 50,
@@ -1241,12 +1256,6 @@ const person = {
   };
 
   console.log(person.firstName);
-    console.log(person.firstName + " is " + person.age + " years old.");
-  console.log(person.lastName);
-  person.age = 20;
-  console.log(person.age);
-  person.fathername = "Manoj";
-  console.log(person.fathername);
 
 
 
