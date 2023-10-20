@@ -1248,15 +1248,19 @@
 //   person.fathername = "Manoj";
 //   console.log(person.fathername);
 
-  const person = {
-    firstName : "John",
-    lastName  : "Doe",
-    age     : 50,
-    eyeColor  : "blue"
-  };
+  // const person = {
+  //   firstName : "John",
+  //   lastName  : "Doe",
+  //   age     : 50,
+  //   eyeColor  : "blue"
+  // };
 
-  console.log(person.firstName);
-    console.log(person.lastName);
+  // console.log(person.firstName);
+  //   console.log(person.lastName);
+
+    // numbers1 = [45, 10, 2, 9, 15];
+// numbers2 = numbers1.flatMap((x) => x*3);
+// console.log(numbers2);
 
 
 
