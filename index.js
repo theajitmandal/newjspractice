@@ -1272,6 +1272,8 @@ let myAge = myBioData[2];
 
 console.log(myName);
 
+let hisName = myBioData[3];
+console.log(hisName);
 
 
 
