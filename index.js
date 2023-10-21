@@ -1263,6 +1263,15 @@
 // console.log(numbers2);
 
 
+//array destructuring
+const myBioData = ['Ajit', 'Mandal', 26];
+
+let myName = myBioData[0];
+let myLName = myBioData[1];
+let myAge = myBioData[2];
+
+console.log(myName);
+
 
 
 
