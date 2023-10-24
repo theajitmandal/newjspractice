@@ -1276,6 +1276,7 @@ let hisName = myBioData[3];
 console.log(hisName);
 console.log(myLName);
 console.log(myAge);
+console.log(`My name is ${myName} and my age is ${myAge}`);
 
 
 
