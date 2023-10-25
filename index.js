@@ -1277,6 +1277,7 @@ console.log(hisName);
 console.log(myLName);
 console.log(myAge);
 console.log(`My name is ${myName} and my age is ${myAge}`);
+console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName}`);
 
 
 
