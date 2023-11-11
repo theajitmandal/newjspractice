@@ -1264,11 +1264,12 @@
 
 
 //array destructuring
-const myBioData = ['Ajit', 'Mandal', 26];
+const myBioData = ['Ajit', 'Mandal', 26, 'Itahari'];
 
 let myName = myBioData[0];
 let myLName = myBioData[1];
 let myAge = myBioData[2];
+let myHome = myBioData[3];
 
 console.log(myName);
 
@@ -1278,6 +1279,7 @@ console.log(myLName);
 console.log(myAge);
 console.log(`My name is ${myName} and my age is ${myAge}`);
 console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName}`);
+console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName} and my home is ${myHome}`);
 
 
 
