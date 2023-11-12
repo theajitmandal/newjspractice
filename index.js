@@ -1280,6 +1280,7 @@ console.log(myAge);
 console.log(`My name is ${myName} and my age is ${myAge}`);
 console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName}`);
 console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName} and my home is ${myHome}`);
+console.log(`My name is @${myName}`);
 
 
 
