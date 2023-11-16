@@ -1283,6 +1283,7 @@ console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${my
 console.log(`My name is @${myName}`);
 console.log(`Hello, I am Ajit Mandal`);
 console.log(`Hello Man`);
+console.log(`Hello, I am a programmer`);
 
 
 
