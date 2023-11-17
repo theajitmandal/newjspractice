@@ -1284,6 +1284,7 @@ console.log(`My name is @${myName}`);
 console.log(`Hello, I am Ajit Mandal`);
 console.log(`Hello Man`);
 console.log(`Hello, I am a programmer`);
+console.log(`Hey Programmer`);
 
 
 
