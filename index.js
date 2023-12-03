@@ -1298,6 +1298,7 @@ console.log(`Hello, Programmers, How are you?`);
 console.log(`Programming, Coding and Development`);
 console.log(`I am ${myName}`);
 console.log(`Javascript, Python, AI`);
+console.log(`I am learning Javascript`);
 
 
 
