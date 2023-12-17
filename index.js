@@ -1315,6 +1315,8 @@ console.log(`Hello Programmers`);
 console.log(`I want to become programmer`);
 console.log(`Javascript, Python, AI`);
 
+console.log(`I am learning Javascript`);
+
 
 
 
