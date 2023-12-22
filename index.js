@@ -1323,6 +1323,9 @@ console.log(`I am AJit Mandal`);
 
 console.log(`Javascript, Python, AI`);
 
+console.log(`Javascript, Python, AI`);
+
+
 
 
 
