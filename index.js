@@ -1300,6 +1300,8 @@ console.log(`I am ${myName}`);
 console.log(`Javascript, Python, AI`);
 console.log(`I am learning Javascript`);
 
+console.log(`I am ${myName}`);
+
 
 console.log(`I am Ajit`);
 console.log(`I am AJit Mandal`);
