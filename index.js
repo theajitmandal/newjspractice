@@ -1332,6 +1332,8 @@ console.log(`Hello Programmers`);
 
 console.log(`Hello Programmers`);
 
+const myBioDatas = ['Ajit', 'Mandal', 26, 'Itahari'];
+
 
 
 
