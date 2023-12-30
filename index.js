@@ -1334,8 +1334,10 @@ console.log(`Hello Programmers`);
 
 const myBioDatas = ['Ajit', 'Mandal', 26, 'Itahari'];
 
-console.log(`Hello I want to become a programmer`);
+console.log(`Hello I want to become a programmer`)
 
+
+console.log(`I am learning Javascript`);
 
 console.log(`I am learning Javascript`);
 
