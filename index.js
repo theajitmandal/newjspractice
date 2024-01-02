@@ -1343,7 +1343,9 @@ console.log(`I am learning Javascript`);
 
 console.log(`I am learning Javascript`);
 
-const myBioDatas = ['Ajit', 'Mandal', 26, 'Itahari'];
+//const myBioDatas = ['Ajit', 'Mandal', 26, 'Itahari'];
+
+const myBioDatass = ['Ajit', 'Mandal', 26, 'Itahari'];
 
 
 
