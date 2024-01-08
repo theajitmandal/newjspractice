@@ -1358,6 +1358,7 @@ console.log(`Hello Programmers`);
 console.log(`I am learning Javascript`)
 
 console.log("Enter your name");
+console.log("Enter your name and age");
 
 
 
