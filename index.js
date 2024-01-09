@@ -1355,13 +1355,14 @@ console.log(`Hello I want to become a programmer`);
 console.log(`Hello Programmers`);
 
 
-console.log(`I am learning Javascript`)
+console.log(`I am learning Javascript`);
 
 console.log("Enter your name");
 console.log("Enter your name and age");
 
 console.log("Enter your name and age");
 
+console.log(`I am learning Javascript`)
 
 
 
