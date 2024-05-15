@@ -1,4 +1,5 @@
 // myNumber1 = [2,7,1,8,10,5,3];
+// console.lo('new commit');
 
 // number2 = myNumber1.sort();
 // number3 = myNumber1.reverse();
@@ -1610,4 +1611,9 @@ console.log(`Hello`);
 console.log(`Hello`);
 
 console.log(`Hello`);
+<<<<<<< HEAD
 console.log('Hello');
+=======
+
+console.log(`Hello`);
+>>>>>>> 4cea3f213fd00a43dad1c47fed975102ba7a5782
