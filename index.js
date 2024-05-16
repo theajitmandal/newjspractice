@@ -1611,9 +1611,5 @@ console.log(`Hello`);
 console.log(`Hello`);
 
 console.log(`Hello`);
-<<<<<<< HEAD
 console.log('Hello');
-=======
-
 console.log(`Hello`);
->>>>>>> 4cea3f213fd00a43dad1c47fed975102ba7a5782
