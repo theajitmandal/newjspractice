@@ -1657,3 +1657,12 @@ console.log(`Hello`);
 
 document.getElementById('demo').innerHTML = 'Hello JavaScript';
 
+//1st July 2025
+// Create an Object
+const person = {};
+
+// Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
