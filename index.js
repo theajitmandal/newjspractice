@@ -1668,3 +1668,4 @@ person.age = 50;
 person.eyeColor = "blue";
 person.weight = 70;
 person.height = 5.6;
+person.friend = "Man";
