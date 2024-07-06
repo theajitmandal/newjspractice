@@ -1670,3 +1670,4 @@ person.weight = 70;
 person.height = 5.6;
 person.friend = "Man";
 person.bestfriend = "Hero";
+person.myFriend = "Abhi";
