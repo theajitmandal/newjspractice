@@ -1672,3 +1672,4 @@ person.friend = "Man";
 person.bestfriend = "Hero";
 person.myFriend = "Abhi";
 person.meetMyFriend = "Abhishek";
+person.hiFriend = "HiFriend";
