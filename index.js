@@ -1674,3 +1674,4 @@ person.myFriend = "Abhi";
 person.meetMyFriend = "Abhishek";
 person.hiFriend = "HiFriend";
 person.hiMyFriend = "HiMyFriend";
+person.helloMyFriend = "HelloMyFriend";
