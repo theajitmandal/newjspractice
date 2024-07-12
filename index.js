@@ -1676,3 +1676,4 @@ person.hiFriend = "HiFriend";
 person.hiMyFriend = "HiMyFriend";
 person.helloMyFriend = "HelloMyFriend";
 person.helloWeAreFriends = "HelloweareFriends";
+person.helloWeAllAreFriends = "HelloweallareFriends";
