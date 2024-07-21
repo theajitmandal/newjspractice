@@ -1687,3 +1687,45 @@ person.hellosWeAllAreFriends = "HellosweallareFriends";
 person.hellosWeAllAreFriends = "HellosweallareFriends";
 person.hellosWeAllAreFriends = "HellosweallareFriends";
 person.hellosWeAllAreFriends = "HellosweallareFriends";
+
+
+// 21st July 2024
+//Introduction to JS
+//JavaScript is the world's most popular programming language.JavaScript is the programming language of the Web.
+
+// Why Study JavaScript?
+// JavaScript is one of the 3 languages all web developers must learn:
+//    1. HTML to define the content of web pages
+//    2. CSS to specify the layout of web pages
+//    3. JavaScript to program the behavior of web pages
+
+//Versions of JavaScript:
+
+  //The Original JavaScript ES1 ES2 ES3 (1997-1999)
+  //The First Main Revision ES5 (2009)
+  //The Second Revision ES6 (2015)
+  //The Yearly Additions (2016, 2017 ... 2021, 2022)
+
+//Commonly Asked Questions -> CAQ
+//How do I get JavaScript?
+//Where can I download JavaScript?
+//Is JavaScript Free?
+
+//You don't have to get or download JavaScript.
+//JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone.
+//JavaScript is free to use for everyone.
+
+//JavaScript Introduction
+
+//Examples of what JS can do
+
+// 1. JavaScript Can Change HTML Content
+    //Example No 1 in index.html
+
+//Note: JavaScript accepts both double and single quotes:
+
+//2. JavaScript Can Change HTML Attribute Values
+    //Example No 2 in index.html
+
+
+
