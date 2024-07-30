@@ -10,7 +10,7 @@
 // const arr = [2,4,5];
 // const obj = {firstName:'Ajit', secondName:'Mandal'};
 
-//Run and check yourself
+//Run and Check Yourself
 // console.log(typeof(string));
 // console.log(typeof(number));
 // console.log(typeof(bigInt));
@@ -33,7 +33,9 @@
 
 //isNaN returns true if value is not a number else returs false
 
-//Run and check yourself
+
+//Discussed in details about NaN at the bottom
+//Run and Check Yourself
 // const myName = "ajit" - "mandal"; 
 // const fullName = "ajit" + "mandal";
 // console.log(myName);
@@ -65,7 +67,7 @@
 // Number.false -> false
 
 // Challenge 
-//Run and check yourself
+//Run and Check Yourself
 // console.log(10 + "20");
 // console.log(9 - "5");
 // console.log("Java" + "Script");
@@ -97,14 +99,52 @@
     console.log(typeof(iAmUseless)) gives object     console.log(typeof(iAmStandBy)) gives undefined
 */
 
-//Run and check yourself
-var iAmUseless = null;
-console.log(typeof(iAmUseless));
-var iAmStandBy;
-console.log(typeof(iAmStandBy));
+//Run and Check Yourself
+// var iAmUseless = null;
+// console.log(typeof(iAmUseless));
+// var iAmStandBy;
+// console.log(typeof(iAmStandBy));
 
 
 // var iAmUseless = null;
 // console.log(typeof(iAmUseless));  //object
 // var iAmStandBy;
 // console.log(typeof(iAmStandBy)); //undefined
+
+// const myName = "Ajit" - "Mandal";
+// console.log(myName);
+// console.log(typeof(myName));
+
+// Run and Check Yourself
+// const myName = "Ajit" - "Mandal";
+// console.log(myName); //NaN
+// console.log(typeof(myName)); //number
+
+// Interview Questions:
+// What is NaN?
+// If 2 strings are subtracted result is NaN
+/* Nan ~ Not a number, Nan is a property of the global object
+         It is a variable in global scope
+         Its initial value is Not-A-Number.
+         isNaN() returs true or false result
+*/
+
+//Run and Check Yourself
+// var myPhoneNumber = 9804065452;
+// var myName = "Ajit";
+// console.log(isNaN(myPhoneNumber));
+// console.log(isNaN(myName));
+
+// var myPhoneNumber = 9804065452;
+// var myName = "Ajit";
+// console.log(isNan(myPhoneNumber)); //false
+// console.log(isNan(myName)); //true
+
+//isNaN Usage:
+// var myPhoneNumber = "9804065452"; 
+// if(isNaN(myPhoneNumber)){
+//     console.log("Please enter a valid phone number");
+// }
+
+
+
