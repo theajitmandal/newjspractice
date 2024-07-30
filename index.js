@@ -1265,437 +1265,477 @@
 
 
 //array destructuring
-const myBioData = ['Ajit', 'Mandal', 26, 'Itahari'];
+// const myBioData = ['Ajit', 'Mandal', 26, 'Itahari'];
 
-let myName = myBioData[0];
-let myLName = myBioData[1];
-let myAge = myBioData[2];
-let myHome = myBioData[3];
+// let myName = myBioData[0];
+// let myLName = myBioData[1];
+// let myAge = myBioData[2];
+// let myHome = myBioData[3];
 
-console.log(myName);
+// console.log(myName);
 
-let hisName = myBioData[3];
-console.log(hisName);
-console.log(myLName);
-console.log(myAge);
-console.log(`My name is ${myName} and my age is ${myAge}`);
-console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName}`);
-console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName} and my home is ${myHome}`);
-console.log(`My name is @${myName}`);
-console.log(`Hello, I am Ajit Mandal`);
-console.log(`Hello Man`);
-console.log(`Hello, I am a programmer`);
-console.log(`Hey Programmer`);
-console.log('Hello, I am a programmer');
-console.log(`Hey, I wan to become a programmer`);
-console.log(`Hello World, My name is ........`);
-console.log(`Hello Programming World`);
-console.log(`Hello, welcome to the world of the programming`);
-console.log(`Hello Programmers`);
-console.log(`Hello World of Programming`);
-console.log(`Hello World, I am a programmer`);
-console.log(`Hello World`);
-console.log(`Hello, Programmers, How are you?`);
-console.log(`Programming, Coding and Development`);
-console.log(`I am ${myName}`);
-console.log(`Javascript, Python, AI`);
-console.log(`I am learning Javascript`);
+// let hisName = myBioData[3];
+// console.log(hisName);
+// console.log(myLName);
+// console.log(myAge);
+// console.log(`My name is ${myName} and my age is ${myAge}`);
+// console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName}`);
+// console.log(`My name is ${myName} and my age is ${myAge} and my lastname is ${myLName} and my home is ${myHome}`);
+// console.log(`My name is @${myName}`);
+// console.log(`Hello, I am Ajit Mandal`);
+// console.log(`Hello Man`);
+// console.log(`Hello, I am a programmer`);
+// console.log(`Hey Programmer`);
+// console.log('Hello, I am a programmer');
+// console.log(`Hey, I wan to become a programmer`);
+// console.log(`Hello World, My name is ........`);
+// console.log(`Hello Programming World`);
+// console.log(`Hello, welcome to the world of the programming`);
+// console.log(`Hello Programmers`);
+// console.log(`Hello World of Programming`);
+// console.log(`Hello World, I am a programmer`);
+// console.log(`Hello World`);
+// console.log(`Hello, Programmers, How are you?`);
+// console.log(`Programming, Coding and Development`);
+// console.log(`I am ${myName}`);
+// console.log(`Javascript, Python, AI`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am ${myName}`);
+// console.log(`I am ${myName}`);
 
 
-console.log(`I am Ajit`);
-console.log(`I am AJit Mandal`);
-console.log(`I am a programmer`);
-console.log(`Hello Programmers`);
+// console.log(`I am Ajit`);
+// console.log(`I am AJit Mandal`);
+// console.log(`I am a programmer`);
+// console.log(`Hello Programmers`);
 
-console.log(`I want to become a programmer`);
-console.log(`I want to become programmer`);
-console.log(`Hello Porgrammers`);
-console.log(`Hello I want to become a programmer`);
-console.log(`Hello Programmers`);
-console.log(`Hello Programmers`);
-console.log(`I want to become programmer`);
-console.log(`Javascript, Python, AI`);
+// console.log(`I want to become a programmer`);
+// console.log(`I want to become programmer`);
+// console.log(`Hello Porgrammers`);
+// console.log(`Hello I want to become a programmer`);
+// console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
+// console.log(`I want to become programmer`);
+// console.log(`Javascript, Python, AI`);
 
-console.log(`I am learning Javascript`)
-console.log(`Hello Porgrammers`);
-console.log(`Hello Porgrammers`);
+// console.log(`I am learning Javascript`)
+// console.log(`Hello Porgrammers`);
+// console.log(`Hello Porgrammers`);
 
-console.log(`I am learning Javascript`)
+// console.log(`I am learning Javascript`)
 
-console.log(`I am AJit Mandal`);
+// console.log(`I am AJit Mandal`);
 
-console.log(`Javascript, Python, AI`);
+// console.log(`Javascript, Python, AI`);
 
-console.log(`Javascript, Python, AI`);
+// console.log(`Javascript, Python, AI`);
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
-const myBioDatas = ['Ajit', 'Mandal', 26, 'Itahari'];
+// const myBioDatas = ['Ajit', 'Mandal', 26, 'Itahari'];
 
-console.log(`Hello I want to become a programmer`);
+// console.log(`Hello I want to become a programmer`);
 
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-//const myBioDatas = ['Ajit', 'Mandal', 26, 'Itahari'];
+// //const myBioDatas = ['Ajit', 'Mandal', 26, 'Itahari'];
 
-const myBioDatass = ['Ajit', 'Mandal', 26, 'Itahari'];
+// const myBioDatass = ['Ajit', 'Mandal', 26, 'Itahari'];
 
 
-console.log(`Hello I want to become a programmer`);
+// console.log(`Hello I want to become a programmer`);
 
-console.log(`Hello I want to become a programmer`);
+// console.log(`Hello I want to become a programmer`);
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log("Enter your name");
-console.log("Enter your name and age");
+// console.log("Enter your name");
+// console.log("Enter your name and age");
 
-console.log("Enter your name and age");
+// console.log("Enter your name and age");
 
-console.log(`I am learning Javascript`)
+// console.log(`I am learning Javascript`)
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
-console.log(`Hello Programmers`);
+// console.log(`Hello Programmers`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`I am learning Javascript`);
+// console.log(`I am learning Javascript`);
 
-console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log('Hello');
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log('Hello');
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-console.log(`Hello`);
-console.log(`Hello`);
-console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
+// console.log(`Hello`);
 
-document.getElementById('demo').innerHTML = 'Hello JavaScript';
+// document.getElementById('demo').innerHTML = 'Hello JavaScript';
 
-//1st July 2025
-// Create an Object
-const person = {};
+// //1st July 2025
+// // Create an Object
+// const person = {};
 
-// Add Properties
-person.firstName = "John";
-person.lastName = "Doe";
-person.age = 50;
-person.eyeColor = "blue";
-person.weight = 70;
-person.height = 5.6;
-person.friend = "Man";
-person.bestfriend = "Hero";
-person.myFriend = "Abhi";
-person.meetMyFriend = "Abhishek";
-person.hiFriend = "HiFriend";
-person.hiMyFriend = "HiMyFriend";
-person.helloMyFriend = "HelloMyFriend";
-person.helloWeAreFriends = "HelloweareFriends";
-person.helloWeAllAreFriends = "HelloweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
-person.hellosWeAllAreFriends = "HellosweallareFriends";
+// // Add Properties
+// person.firstName = "John";
+// person.lastName = "Doe";
+// person.age = 50;
+// person.eyeColor = "blue";
+// person.weight = 70;
+// person.height = 5.6;
+// person.friend = "Man";
+// person.bestfriend = "Hero";
+// person.myFriend = "Abhi";
+// person.meetMyFriend = "Abhishek";
+// person.hiFriend = "HiFriend";
+// person.hiMyFriend = "HiMyFriend";
+// person.helloMyFriend = "HelloMyFriend";
+// person.helloWeAreFriends = "HelloweareFriends";
+// person.helloWeAllAreFriends = "HelloweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+// person.hellosWeAllAreFriends = "HellosweallareFriends";
+
+//                         ****** From TT *****
+// const string = "Hello";
+// const number = 10;
+// const bigInt = BigInt(25490);
+// const isNull = null;
+// const isMale = true;
+// let helloUser;
+// const arr = [2,4,5];
+// const obj = {firstName:'Ajit', secondName:'Mandal'};
+
+// console.log(typeof(string));
+// console.log(typeof(number));
+// console.log(typeof(bigInt));
+// console.log(typeof(isNull));
+// console.log(typeof(isMale));
+// console.log(typeof(helloUser));
+// console.log(typeof(arr));
+// console.log(typeof(obj));
+
+// const myName = "ajit" - "mandal";
+// const fullName = "ajit" + "mandal";
+// console.log(myName);
+// console.log(typeof(myName));
+// console.log(isNaN(NaN));
+// console.log(NaN === NaN);
+// console.log(NaN == NaN);
+// console.log(Number.NaN === NaN);
+// console.log(Number.Nan);
+
+// console.log(Number.isNaN(NaN));
+// console.log(Number.isNaN(fullName));
+
+// isNaN(Nan) -> true
+// isNaN(fullName) -> false
+//Number.true -> true
+//Number.false -> false
+
+
+//                        ***** From W3schools.com *****
 
 // 21st July 2024
 //Introduction to JS
@@ -1734,6 +1774,9 @@ person.hellosWeAllAreFriends = "HellosweallareFriends";
 
 //2. JavaScript Can Change HTML Attribute Values
     //Example No 2 in index.html
+
+  
+  
 
 
 
