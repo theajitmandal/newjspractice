@@ -113,11 +113,24 @@
 
 //DO WHILE LOOP
 
-var n = 1;
-do{
-    console.log(n);
-    n++;
-}while(n <= 10);
+// var n = 1;
+// do{
+//     console.log(n);
+//     n++;
+// }while(n <= 10);
 
 /* while loop  checks the condition and runs the statement (if it is true) whereas
 do loop first runs the statement and then checks the condition */
+
+// FOR LOOP : is very simple and takes DO WHILE and WHILE LOOP to the next level
+// for (initialization; condition; iteration)  //not semicolon after iteration
+//     {
+            //code to be executed
+//     }
+
+// Example: WAP to print the table of the given number using for loop.
+
+let n = 5;
+for(i=1; i<=10; i++){
+    console.log(`${n} * ${i} = ${n*i}`);
+}
