@@ -8,7 +8,7 @@ const repoCount = 25;
 
 // console.log(name + repoCount + "VALUE"); //not modern concepts so ignore it
 
-// console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); //string interpolation
+// console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); //string interpolation (`` Back Ticks)
 
 // Other ways to define string
 

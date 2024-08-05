@@ -1774,9 +1774,3 @@
 
 //2. JavaScript Can Change HTML Attribute Values
     //Example No 2 in index.html
-
-  
-  
-
-
-
