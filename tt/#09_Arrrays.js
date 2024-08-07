@@ -335,7 +335,6 @@ We use for loop to navigate through the each elements of an array
     // 01. Find the square root of each element in an array. let arr = [25, 36, 49, 64, 81];
     // 02. Multiply each element by 2 and return only those element which are greater than 10?
     
-    
 
 
     
