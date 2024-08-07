@@ -218,9 +218,9 @@ We use for loop to navigate through the each elements of an array
 */
 
 // Example:
-    const plants = ['brocoli', 'cabbage', 'brinjal', 'tomato', 'cauli'];
-    console.log(plants.shift()); //removes brocollo
-    console.log(plants); //returns from cabbage to cauli
+    // const plants = ['brocoli', 'cabbage', 'brinjal', 'tomato', 'cauli'];
+    // console.log(plants.shift()); //removes brocollo
+    // console.log(plants); //returns from cabbage to cauli
 
 /* Challenge Time:
         const months = ['Jan', 'march', 'April', 'June', 'July'];
@@ -231,24 +231,112 @@ We use for loop to navigate through the each elements of an array
 */
 
 /* *************** CRUD OPERATION using only one method *************** */
+
+    // const months = ['Jan', 'march', 'April', 'June', 'July'];
     
+    // Challenge 01. Add Dec at the end of an array?
+
+    // const newMonth = months.splice(3, 2, "dec");
+    // In above code, 'dec' is assed to the 2nd last, but if we put 5 inplace of 4, 'dec' will be added to last; 
+    // and 0 represents that 0 elements should be deleted, if written 1 instead of 0, it will delte 1 element after dec, 
+    // if written 2 instead of 0, then it will delete 2 elements after 'dec'
+
+    // If we know no. of elements in an array then we can also run the following code...
+    // const newMonth = months.splice(months.length, 0, "dec");    
+    // console.log(newMonth); 
+    // console.log(months);
+
+    // Challenge 02. What is the return value of splice method?
+
+    // console.log(newMonth); // ~ returns the empty array
+    // By here, no elements are deleted so it shows an empty array (means it shows the deleted elements in an array)
+
+    // Challenge 03. Update 'march' to 'March' (update)?
+
+    // const updateMonth = months.splice(1, 1, "March");
+    // console.log(updateMonth);
+    // console.log(months);
+
+    // OR,
+    // const indexOfMarch = months.indexOf('march');
+    // console.log(indexOfMarch);
+
+    // if(indexOfMarch != -1){
+    //     const updateMonth = months.splice(indexOfMarch, 1, 'March');
+    // }else{
+    //     console.log(`No such data is found`);   
+    // }
+    // console.log(months);
+
+    // const updateMonth = months.splice(indexOfMarch, Infinity); //deletes all the data afer march
+    // console.log(months);
+
+    // Challenge 04. Delete june from an array?
+    // const indexOfJune = months.indexOf('June');
+    // if(indexOfJune != -1){
+    //     const delJune = months.splice(indexOfJune, 1);
+    //     console.log(delJune);
+    // }
+
+    // console.log(delJune); //cannot run here    
+    // console.log(months);
+
+    // Note: Splice method returns the deleted data
+
+    // Very Very Important
+    /* ********* Map(), Reduce() and Filter()  ********* */
+
+    /* Array.prototype.map() 
+        let newArray = arr.map(callback(currentValue)[,index[,array]]) {return element for newArray, after executing
+        something }[,this Arg]};
+
+        ~ returns a new array contaiing the results of calling a function on every element in this array
+
+        ~ map = forEach -> same but little difference
+    */
+
+    // Example
+    const array1 = [1, 4, 9, 16, 25];
+
+    let newArr = array1.map((curElem, index, arr) => {
+        return curElem > 9;
+    })
+    // Run and Check Yourself
+    console.log(newArr); 
+    console.log(array1);
+
+    // Example
+    console.log(newArr);  //gives [false, false, false, true, true]
+    console.log(array1); // gives [1, 4, 8, 16, 25]
+
+    // Run and Check Yourself
+    let newArr1 = array1.map((curElem, index, arr) => {
+        return `Index no = ${index} and the value is ${curElem} belong to ${arr}`;
+    });
+    console.log(newArr1);
+
+    let newArr2 = array1.forEach((curElem, index, arr) => {
+        return `Index no = ${index} and the value is ${curElem} belong to ${arr}`;
+    });
+    console.log(newArr2);
+
+    // Note: map() method returns the new array without mutating the original array.
+
+    /* Difference between map and forEach: The first difference between the map() and forEach() is the returning value. 
+    The forEach() method returns undefined and map() returns a new array with the transformed elements. Even if they 
+    do the same job, the returning value remains different.
+
+    Another difference is ability to chain other methods. The second difference between these array methods is the fact
+    that map() is chainable. This means that you can attach reduce(), sor(), filter() and so on after performing
+    a map() method on an array. That's something you can't do with forEach() because it returns an undefined.
+    */
+
+    // Challenge Time
+    // 01. Find the square root of each element in an array. let arr = [25, 36, 49, 64, 81];
+    // 02. Multiply each element by 2 and return only those element which are greater than 10?
     
     
 
-    
-    
-    
 
     
     
-
-
-
-
-
-    
-    
-    
-    
-
-
