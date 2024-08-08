@@ -296,29 +296,30 @@ We use for loop to navigate through the each elements of an array
     */
 
     // Example
-    const array1 = [1, 4, 9, 16, 25];
+    // const array1 = [1, 4, 9, 16, 25];
 
-    let newArr = array1.map((curElem, index, arr) => {
-        return curElem > 9;
-    })
+    // let newArr = array1.map((curElem, index, arr) => {
+    //     return curElem > 9;
+    //     return curElem * 9; //mutlitplies each element by 9
+    // })
     // Run and Check Yourself
-    console.log(newArr); 
-    console.log(array1);
+    // console.log(newArr); 
+    // console.log(array1);
 
     // Example
-    console.log(newArr);  //gives [false, false, false, true, true]
-    console.log(array1); // gives [1, 4, 8, 16, 25]
+    // console.log(newArr);  //gives [false, false, false, true, true]
+    // console.log(array1); // gives [1, 4, 8, 16, 25]
 
     // Run and Check Yourself
-    let newArr1 = array1.map((curElem, index, arr) => {
-        return `Index no = ${index} and the value is ${curElem} belong to ${arr}`;
-    });
-    console.log(newArr1);
+    // let newArr1 = array1.map((curElem, index, arr) => {
+    //     return `Index no = ${index} and the value is ${curElem} belong to ${arr}`;
+    // });
+    // console.log(newArr1);
 
-    let newArr2 = array1.forEach((curElem, index, arr) => {
-        return `Index no = ${index} and the value is ${curElem} belong to ${arr}`;
-    });
-    console.log(newArr2);
+    // let newArr2 = array1.forEach((curElem, index, arr) => {
+    //     return `Index no = ${index} and the value is ${curElem} belong to ${arr}`;
+    // });
+    // console.log(newArr2);
 
     // Note: map() method returns the new array without mutating the original array.
 
@@ -333,7 +334,139 @@ We use for loop to navigate through the each elements of an array
 
     // Challenge Time
     // 01. Find the square root of each element in an array. let arr = [25, 36, 49, 64, 81];
-    // 02. Multiply each element by 2 and return only those element which are greater than 10?
+    // 02. Multiply each element by 2 and return only those element which are greater than 60?
+
+    // Solutions:
+    // 01
+    // const arr5 = [25, 36, 49, 64, 81];
+    // const newArr = arr5.map((curElem, index, arr) => {
+    //     return curElem ** 0.5;
+    // });
+    // console.log(newArr);
+    // console.log(arr5);
+
+    // In line, above code can be simplified as:
+    // let arrSqr = arr.map((curElem) => Math.sqrt(curElem));
+    // console.log(arrSqr);
+    
+
+    // 02
+    // const newArrBy2 = arr5.map((curElem, index, arr) => {
+    //     const newElem = curElem * 2;
+    //     if(newElem > 60){
+    //         return curElem;
+    //     }
+    // });
+    // console.log(newArrBy2);
+
+    // above code doesnot work so we need to use filter with map
+
+    // 02 
+    // const newArrBy2 = arr5.map((curElem) => { //index, arr is removed frome here as it is not used
+    //     return newElem = curElem * 2;
+    // }).filter((curElem) => {
+    //     return curElem > 60;
+    // });
+    // console.log(newArrBy2); //result will be [72, 98, 128, 162]
+
+    //above line can be simplified on a single line as below:
+    // const newArrays = arr5.map((curElem) => curElem * 2).filter((curElem) => curElem > 60);
+    // console.log(newArrays); //result will be [72, 98, 128, 162]
+
+    // Furthermore, inorder to find the sum of 72, 98, 128, 162 -> we need reduce method
+
+    /* Array.prototype.filter() 
+        The filter() method creates a new array filled with elements that pass a test provided by a function.
+        The filter() method does not execute the function for empty elements.
+        The filter() method does not change the original array.
+    */
+
+    // Example:
+    // const array = [2, 4, 6, 8, 10];
+    // console.log(array.filter((currElem) => currElem > 6));
+    // console.log(array);
+
+    /* Array.prototype.reduce() 
+        The reduce() method flattens an array means to convert 3D or 2D array into a single dimensional array.
+
+        The reduce() method executes a reducer function (that you provide on each element of the array resulting
+        in single output value)
+        The reducer function takes four arguments:
+        1. Accumulator (box where all values are collected)
+        2. Current Value
+        3. Current Index
+        4. Source Array
+    */
+
+    // Example:
+    // let arr = [5, 6, 2];
+    // let sum = arr.reduce((acc, currElem, index, arr) => { //index, arr are optional
+    //     //acc += currElem; //gives undefined
+    //     return acc += currElem;
+    // });
+    // console.log(sum); //gives 13
+
+    // More Example
+    // let arr = [5, 6, 2];
+    // let sum = arr.reduce((acc, currElem, index, arr) => { //index, arr are optional
+    //     //acc += currElem; //gives undefined
+    //     return acc += currElem;
+    // }, 7); //if I need to add initial value 7 at the beginning
+    // console.log(sum); //gives 7 + 5 + 6 + 2 = 20
+
+    // Now lets add 72, 98, 128, 162 of Challenge 02 above in filter, reduce
+    // means given arr = [25, 36, 49, 64, 81], multiply each elements by 2, display greater than 60 and find their sum
+    // arr = [25, 36, 49, 64, 81]
+    // console.log(arr.map((currElem) => currElem * 2).filter((currElem) => currElem > 60)
+    // .reduce((acc, currElem) => acc += currElem));
+
+    // How to flatten an array? (How to convert 2D and 3D array into one dimensional array?)
+
+    // const arr = [
+    //     ['zone-1', 'zone-2'],
+    //     ['zone-3', 'zone-4'],
+    //     ['zone-5', 'zone-6'],
+    //     ['zone-7', 'zone-8'],
+    // ];
+
+    // let flatArr = arr.reduce((acc, currVal) => {
+    //     return acc.concat(currVal);
+    // })
+    // console.log(flatArr);
+
+    // Output will be:
+    // [
+    //     'zone-1', 'zone-2',
+    //     'zone-3', 'zone-4',
+    //     'zone-5', 'zone-6',
+    //     'zone-7', 'zone-8'
+    // ]
+
+    // But if there will be this in the last line ['zone-7', ['zone-8', 'zone-9']] then it can't reduce
+    // this type of array and for that new feature is added in ECMAScript 2020.
+    // array given below cannot be flattened by reduce() method
+    const arr = [
+        ['zone-1', 'zone-2'],
+        ['zone-3', 'zone-4'],
+        ['zone-5', 'zone-6'],
+        ['zone-7', ['zone-8', 'zone-9']],
+    ];
+
+    
+
+
+    
+    
+    
+ 
+
+
+
+
+    
+    
+
+    
     
 
 
