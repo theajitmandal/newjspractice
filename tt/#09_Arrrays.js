@@ -375,7 +375,7 @@ We use for loop to navigate through the each elements of an array
 
     // Furthermore, inorder to find the sum of 72, 98, 128, 162 -> we need reduce method
 
-    /* Array.prototype.filter() 
+    /* Array.prototype.filter() : 
         The filter() method creates a new array filled with elements that pass a test provided by a function.
         The filter() method does not execute the function for empty elements.
         The filter() method does not change the original array.
@@ -383,8 +383,8 @@ We use for loop to navigate through the each elements of an array
 
     // Example:
     // const array = [2, 4, 6, 8, 10];
-    // console.log(array.filter((currElem) => currElem > 6));
-    // console.log(array);
+    // console.log(array.filter((currElem) => currElem > 6)); //
+    // console.log(array); //
 
     /* Array.prototype.reduce() 
         The reduce() method flattens an array means to convert 3D or 2D array into a single dimensional array.
@@ -452,6 +452,7 @@ We use for loop to navigate through the each elements of an array
         ['zone-7', ['zone-8', 'zone-9']],
     ];
 
+    const arr5 = [1, 3, 5, 7, 9];
     
 
 
