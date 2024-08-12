@@ -1,5 +1,6 @@
 // myNumber1 = [2,7,1,8,10,5,3];
 // console.lo('new commit');
+console.log(`Welcome All`);
 
 // number2 = myNumber1.sort();
 // number3 = myNumber1.reverse();
