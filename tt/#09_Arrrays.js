@@ -457,6 +457,7 @@ We use for loop to navigate through the each elements of an array
     const arr6 = [4, 8, 12, 16, 20];
 
     const arr7 = [1, 2, 3, 4, 5, 6];
+    const arr8 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     
 
 
