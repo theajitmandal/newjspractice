@@ -460,6 +460,8 @@ We use for loop to navigate through the each elements of an array
     const arr8 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const arr9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+    const arr11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
     
 
 
