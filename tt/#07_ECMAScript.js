@@ -2,8 +2,9 @@
 
 /* History of JS
     1. In 1996 or 1995, JS was created by Brender Eich for Netscape 2 and became ECMA-262 standard in 1997
-    2. IN 1997, ECMA INternational (It was then submitted to ECMA international for standardization which resulted in ECMAScript)
-    3. IN 2015, ES6 decided to switch annual release of ECMAScript
+    2. In 1997, ECMA INternational (It was then submitted to ECMA international for standardization which resulted 
+        in ECMAScript)
+    3. In 2015, ES6 decided to switch annual release of ECMAScript
 
     Timeline:
     2015    ~ ECMAScript 2015 knowns as ES6 or ECMASCript 6

@@ -32,7 +32,7 @@
 //typeof both array and object is object
 
 //isNaN returns true if value is not a number else returs false
-
+//if number then false otherwise always true
 
 //Discussed in details about NaN at the bottom
 //Run and Check Yourself
@@ -90,10 +90,10 @@
 // console.log(false + true); //1
 // console.log(false - true); //-2
 
-// Difference between Null and Object
-//          Null                                          Indefined
+// Difference between Null and Undefined
+//          Null                                          undefined
 /*
-    typeof Null is object                            typeof object is undefined
+    typeof Null is object                            typeof undefined is undefined
     useless variable                                 value is not assigned(undefined), will be defined(assigned) later
     var iAmUseless = null;                           var iAmStandBy;
     console.log(typeof(iAmUseless)) gives object     console.log(typeof(iAmStandBy)) gives undefined

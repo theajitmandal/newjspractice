@@ -68,7 +68,7 @@
 // var age = 2;
 // console.log((age >= 18) ? "You can vote" : "You cannot vote");
 
-//Switch Statement: Evaluates an expression, matching the expressions value to a cause clase and executes
+//Switch Statement: Evaluates an expression, matching the expressions value to a case clause and executes
 //                  statements associated with that case.
 
 // var area = "rectangle";
@@ -85,8 +85,8 @@
 //         console.log(`The area of circle is : ${l * b}`);
 //         break;
 
-//     case 'circle':
-//         onsole.log(`The area of circle is : ${l * l}`);
+//     case 'square':
+//         onsole.log(`The area of square is : ${l * l}`);
 //         break;
 
 //     default:

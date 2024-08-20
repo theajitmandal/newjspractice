@@ -1,6 +1,6 @@
 /* ********** Arrays **********
  When we use var, we can store only one value at a time. When we feel like storing multiple values in one variable
- then instead of var, we will use an array. In JS, we ave an Array class and arrays are the prototype of this class.
+ then instead of var, we will use an array. In JS, we have an Array class and arrays are the prototype of this class.
  
  In JS, arrays can store any data types to a same variable.
 
@@ -18,8 +18,8 @@ Traversal of an Array
 
 var myFriends = ['vinod', 'ramesh', 'arjun', 'vishal'];
 To display data,
-    console.log(myFrineds[1]) -> shows vinod
-    console.log(myFrineds[2]) -> shows ramesh
+    console.log(myFrineds[0]) -> shows vinod
+    console.log(myFrineds[1]) -> shows ramesh
 
 If we wan to check the length of elements of an array:
     console.log(myFriends.length)'  -> 4

@@ -76,7 +76,7 @@
         02 A function is a group of reusable code which can be called anywhere in your program. This eliminates the need
            of writing the same code again and again.
         
-           DRY -> Dono Repeat Yourself
+           DRY -> Donot Repeat Yourself
 */
 
 /*  05 Function Expressions
@@ -94,8 +94,8 @@
         // console.log(funExp); //gives undefined, It doesn't returns any value (to remove, we need to use return keyword)
 
 /*  06 Return Keyword
-        When Javascript reaches a returb statement, the function will stop executing.
-        Functions often compute a returb value. The returb value is "returned back to the caller".
+        When Javascript reaches a return statement, the function will stop executing.
+        Functions often compute a return value. The return value is "returned back to the caller".
 */
 
 // Example:
@@ -108,7 +108,7 @@
         console.log(funExp);
 
 /*  07 Anonymous Function : is the type of function that has no name...
-        A function expression is similar to and has the same syntax as a functiond declaration. One can define 
+        A function expression is similar to and has the same syntax as a function declaration. One can define 
         "named" function expression (where the name of expression might be used in the call stack for example)
         or anonymous function expressions.
 

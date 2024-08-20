@@ -1,7 +1,7 @@
 // 5 + 20 
 //Here, 5 and 20 are called operands, + is the operator
 
-//Expression is the combination of operator and operand. Example: 5 + 20 as a whole is a expression
+//Expression is the combination of operator and operand. Example: 5 + 20 as a whole is an expression
 
 //1. Assignment Operator: It assigns a value to its left operand based on the value of its right operand.
     //The assignment operator is equal to sign(=).
@@ -43,7 +43,7 @@ a single numerical value.*/
 
 //Example
 // var num = 15;
-// var newNum = num++; //num++ means same 15 but original value of numm will be incremented by 1
+// var newNum = num++; //num++ means same 15 but original value of num will be incremented by 1
 // console.log(num);
 // console.log(newNum);
 

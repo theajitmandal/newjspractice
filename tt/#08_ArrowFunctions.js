@@ -12,7 +12,7 @@
 
 // How to convert into fat arrow function 
 
-// console.log(sum()); //gives error cannot acces 'sum' before initialization
+// console.log(sum()); //gives error cannot access 'sum' before initialization
 
 // const sum = () => {
 //     let a = 5;
