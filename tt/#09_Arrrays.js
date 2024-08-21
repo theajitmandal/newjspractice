@@ -1,3 +1,24 @@
+/*
+    FOR IN
+    FOR OF
+    FOR EACH
+    indexOf
+    lastIndexOf
+    includes
+    find
+    findIndex
+    filter
+    sort
+    push
+    unshift
+    pop
+    shift
+    splice
+
+    map
+    reduce
+    filter
+*/
 /* ********** Arrays **********
  When we use var, we can store only one value at a time. When we feel like storing multiple values in one variable
  then instead of var, we will use an array. In JS, we have an Array class and arrays are the prototype of this class.
@@ -66,6 +87,7 @@ We use for loop to navigate through the each elements of an array
     // })
 
     // FOR...EACH cannot break in the middle, starts with the 1st data and goes upto the last data
+    // FOR...EACH doesnot change original array, just it runs a function over each elements of original array
 
     // Example: Program using FOR...EACH to increase each element of an array by 5
     // let newNum = [4, 6, 7, 8];
@@ -139,7 +161,7 @@ We use for loop to navigate through the each elements of an array
 */
 
 /* Array.prototype.filter();
-    ~ returns a new arrary containing all elements of the calling array for which the provided filtering funciton returns 
+    ~ returns a new arrary containing all elements of the calling array for which the provided filtering function returns 
       true
     ~ returns empty array if doesnot find any value
 */
@@ -232,11 +254,15 @@ We use for loop to navigate through the each elements of an array
 
 /* *************** CRUD OPERATION using only one method *************** */
 
+    // Splice Method: Array.Splice(index no. where elements to be added, 
+    //                              no. of elements to be deleted after added elements,
+    //                              element to be added)
+
     // const months = ['Jan', 'march', 'April', 'June', 'July'];
     
     // Challenge 01. Add Dec at the end of an array?
 
-    // const newMonth = months.splice(3, 2, "dec");
+    // const newMonth = months.splice(3, 0, "dec");
     // In above code, 'dec' is assed to the 2nd last, but if we put 5 inplace of 4, 'dec' will be added to last; 
     // and 0 represents that 0 elements should be deleted, if written 1 instead of 0, it will delte 1 element after dec, 
     // if written 2 instead of 0, then it will delete 2 elements after 'dec'
@@ -290,7 +316,7 @@ We use for loop to navigate through the each elements of an array
         let newArray = arr.map(callback(currentValue)[,index[,array]]) {return element for newArray, after executing
         something }[,this Arg]};
 
-        ~ returns a new array contaiing the results of calling a function on every element in this array
+        ~ returns a new array containing the results of calling a function on every element in this array
 
         ~ map = forEach -> same but little difference
     */
@@ -328,7 +354,7 @@ We use for loop to navigate through the each elements of an array
     do the same job, the returning value remains different.
 
     Another difference is ability to chain other methods. The second difference between these array methods is the fact
-    that map() is chainable. This means that you can attach reduce(), sor(), filter() and so on after performing
+    that map() is chainable. This means that you can attach reduce(), sort(), filter() and so on after performing
     a map() method on an array. That's something you can't do with forEach() because it returns an undefined.
     */
 
