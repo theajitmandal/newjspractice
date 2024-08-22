@@ -24,14 +24,16 @@ const gameName = new String('AjitMan');
 // console.log(gameName.indexOf('t'));
 
 // const newString = gameName.substring(0,4);
-const newString = gameName.substring(-2,4); //doesn't take negative values
-console.log(newString);
+// // 0 represent from where and 4 represents how many chracters
+// // const newString = gameName.substring(-2,4); //doesn't take negative values
+// console.log(newString);
 
-// const anotherString = gameName.slice(2,5);
-// console.log(anotherString);
+const anotherString = gameName.slice(2,5);
+// 2 represents from which index and 5 represents upto which index
+console.log(anotherString);
 
 const anotherNewString = gameName.slice(-1); //gives the last character of the string
-// const anotherNewString = gameName.slice(-2,3); //didn't worked dont kknow why
+// const anotherNewString = gameName.slice(-2,3); //didn't worked dont know why
 console.log((anotherNewString));
 
 

@@ -41,4 +41,4 @@ const myFunction = function () {
 
 console.log(typeof(myFunction)); //this is function object
 
-//typeof of all non-primitive data types is object...typeof of Function is gives function which is called function object
+//typeof of all non-primitive data types is object...typeof of Function gives function which is called function object

@@ -13,6 +13,8 @@
     unshift
     pop
     shift
+
+    slice (as read in cac arrays.js)
     splice
 
     map
@@ -307,7 +309,7 @@ We use for loop to navigate through the each elements of an array
     // console.log(delJune); //cannot run here    
     // console.log(months);
 
-    // Note: Splice method returns the deleted data
+    // Note: Splice method returns the deleted elements in an array
 
     // Very Very Important
     /* ********* Map(), Reduce() and Filter()  ********* */
@@ -317,6 +319,7 @@ We use for loop to navigate through the each elements of an array
         something }[,this Arg]};
 
         ~ returns a new array containing the results of calling a function on every element in this array
+        ~ return keyword is necessary otherwise gives undefined
 
         ~ map = forEach -> same but little difference
     */
@@ -352,6 +355,8 @@ We use for loop to navigate through the each elements of an array
     /* Difference between map and forEach: The first difference between the map() and forEach() is the returning value. 
     The forEach() method returns undefined and map() returns a new array with the transformed elements. Even if they 
     do the same job, the returning value remains different.
+
+    ~ return keyword is necessary in map otherwise gives undefined but return keyword is not necessary in forEach
 
     Another difference is ability to chain other methods. The second difference between these array methods is the fact
     that map() is chainable. This means that you can attach reduce(), sort(), filter() and so on after performing
@@ -440,13 +445,14 @@ We use for loop to navigate through the each elements of an array
     // }, 7); //if I need to add initial value 7 at the beginning
     // console.log(sum); //gives 7 + 5 + 6 + 2 = 20
 
-    // Now lets add 72, 98, 128, 162 of Challenge 02 above in filter, reduce
+    // Now lets add 72, 98, 128, 162 of Challenge 02 above in filter, reduce (Answer will be 460)
     // means given arr = [25, 36, 49, 64, 81], multiply each elements by 2, display greater than 60 and find their sum
     // arr = [25, 36, 49, 64, 81]
     // console.log(arr.map((currElem) => currElem * 2).filter((currElem) => currElem > 60)
     // .reduce((acc, currElem) => acc += currElem));
 
-    // How to flatten an array? (How to convert 2D and 3D array into one dimensional array?)
+    // How to flatten an array? (How to convert 2D and 3D array into one dimensional array?) 
+    // Here In reduce method, concat is used, arrays can also be flattened using flat()
 
     // const arr = [
     //     ['zone-1', 'zone-2'],

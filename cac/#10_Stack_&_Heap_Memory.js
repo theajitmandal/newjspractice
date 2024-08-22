@@ -11,8 +11,8 @@
 
     console.log(anotherName);
     console.log(myName);
-    console.log(hisName);
-    console.log(ourName);
+    // console.log(hisName);
+    // console.log(ourName);
 
     let userOne = {
         email: "user@gmail.com",

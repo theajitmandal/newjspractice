@@ -14,7 +14,7 @@
 
 //Strings can be converted into number but strings like "40abc" when converted into number gives NaN.
 
-// "43" => 33
+// "43" => 43
 // "43abc" => NaN
 // true => 1; false => 0
 // null => number but value will be 0
@@ -72,7 +72,7 @@
 // num1 = num2 = num3 = 2 + 2;
 //Dont write such codes write readable codes
 
-let gameCounter = 50;
-// gameCounter++;
-++gameCounter;
-console.log(gameCounter);
+// let gameCounter = 50;
+// // gameCounter++;
+// ++gameCounter;
+// console.log(gameCounter);

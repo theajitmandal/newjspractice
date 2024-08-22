@@ -17,10 +17,10 @@
 // console.log((newNumber.toPrecision(2)));
 // console.log((newNumber.toPrecision(1)));
 
-// const hundreds = 1000000;
-// console.log(hundreds.toLocaleString());
+const hundreds = 1000000;
+console.log(hundreds.toLocaleString());
 
-// console.log(hundreds.toLocaleString('en-IN'));
+console.log(hundreds.toLocaleString('en-IN'));
 
 // console.log();
 
