@@ -168,6 +168,9 @@
     let str2 = "Hello World";
     console.log(str2[0]);
 
+    let str3 = "Hello World of JS";
+    console.log(str3[2]);
+
     /* Other Useful Methods: */
     
 
