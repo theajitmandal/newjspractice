@@ -150,28 +150,77 @@
                                in a string. The method returns a UTF-16 code (an integer between 0 and 65535)
 */
 
-    let str = "Hello Javascript";
-    console.log(str.charCodeAt(6));
-    console.log(str.charAt(6));
+    // let str = "Hello Javascript";
+    // console.log(str.charCodeAt(6));
+    // console.log(str.charAt(6));
     
     // The unicode standard provides a unique number for every character, no matter the platform device, application or
     // language. UTF-8 is a popular unicode encoding which has 88-bit code units.
 
     // Challenge: Return the unicode of the last character of a string.
-        let str1 = "mycountryJ";
-        console.log(str1.charCodeAt(str1.length-1));
+        // let str1 = "mycountryJ";
+        // console.log(str1.charCodeAt(str1.length-1));
 
 /*
     03. Property Access: ECMAScript 5(2009) allows property access [] on strings.
 */
 
-    let str2 = "Hello World";
-    console.log(str2[0]);
+    // let str2 = "Hello World";
+    // console.log(str2[0]);
 
-    let str3 = "Hello World of JS";
-    console.log(str3[2]);
+    // let str3 = "Hello World of JS";
+    // console.log(str3[2]);
 
     /* Other Useful Methods: */
+    // let myName = "ajit mandal";
+    // console.log(myName.toUpperCase());
+    // console.log(myName.toLowerCase());
+
+    /***** Concat Method *****/
+    /*
+        Concat() joins two or more strings.
+    */
+
+        // let fName = "Ajit ";
+        // let lName = "Mandal";
+        // let fullName = fName.concat(lName);
+        // console.log(fullName);
+
+        // console.log(fName.concat("", lName));
+        // console.log(fName + lName);
+        // console.log(`${fName} ${lName}`); //This one is better as given by ES6 
+
+    /***** String.trim() *****/
+    /*
+        The trim() method removes whitespace from both sides of a string (starting side and last side only),
+        not in the middle part.
+    */
+
+        // let str5 = "                 Hello World            ";
+        // console.log(str5.trim());
+
+    /***** Converting a string into an Array *****/
+    /*
+        A string can be converted to an array with the split() method.
+    */
+        // let txt = "a, b, c, d, e";
+        // console.log(txt.split(",")); // split on commas
+
+        // let txt1 = "Apple Banana Orange Mango";
+        // console.log(txt1.split(" ")); // split on commas
+
+        // let txt2 = "Elephant | Lion | Tiger | Leopard";
+        // console.log(txt2.split("|")); // split on commas
+        
+
+        
+        
+    
+        
+        
+        
+    
+    
     
 
         

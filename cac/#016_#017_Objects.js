@@ -104,8 +104,11 @@ const otherUser = {
 };
 
 console.log(Object.keys(otherUser)); //gives keys of objects in an array
-console.log(Object.values(otherUser)); //gives keys of objects in an array
-console.log(Object.entries(otherUser)); //gives keys of objects in an array
+console.log(Object.values(otherUser)); //gives values of objects in an array
+console.log(Object.entries(otherUser)); //gives whole array in key-value pairs.
+
+// The Object.entries() static method returns an array of a given 
+// object's own enumerable string-keyed property key-value pairs.
 
 console.log(otherUser.hasOwnProperty('isLoggedIn'));
 console.log(otherUser.hasOwnProperty('isLogged'));
