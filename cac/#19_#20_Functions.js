@@ -30,6 +30,8 @@
 
 // pro(2, 3);
 
+// return keyword will return value back to the calling statement but wont' print the data itself
+
 // Interesting concept in JS
 
 // function addTwoNumbers(number1, number2){
@@ -70,12 +72,39 @@
 
 // ... acts as spread operator and rest operator both but when? -> learn later, in below code used as rest 
 // rest means to pack all pieces in one bundle
-function calculateCartPrice(...num1){
-    return num1
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+
+
+// function calculateCartPrice(val1, val2, ...num1){ //val1 takes 2, val2 takes 4 and rest values 10 & 16 are taken by num1
+//     return num1
+// }
+
+// console.log(calculateCartPrice(2));
+// console.log(calculateCartPrice(2, 4, 10, 16)); //sends only first argument if not used rest in function definition
+
+/***** Passing objects into function *****/
+const user = {
+    username: "ajjit",
+    price: 400
 }
 
-console.log(calculateCartPrice(2));
-console.log(calculateCartPrice(2, 4, 10)); //sends only first argument
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+handleObject(user);
+
+const myNewArray = [300, 100, 400, 800];
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([300, 100, 400, 800])); //save as above line
+
 
 
 
