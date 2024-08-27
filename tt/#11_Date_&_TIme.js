@@ -29,6 +29,7 @@
 */
 
     console.log(Date.now());
+    console.log(Date.now);
 
 /* 
     newDate(year, month) : 7 numbers specify year, month, day, hour, minute, second and millisecond (in that order)
