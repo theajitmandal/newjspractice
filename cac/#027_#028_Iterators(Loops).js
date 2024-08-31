@@ -54,12 +54,35 @@
 //     console.log(`Value of is is ${index}`);
 // }
 
-for (let index = 1; index <= 20; index++) {
-    if(index == 5){
-        console.log(`Detected 5`);
-        continue;                          // 5 will not be printed and remaining loop will execute as it is
-    }
-    console.log(`Value of is is ${index}`);
+// for (let index = 1; index <= 20; index++) {
+//     if(index == 5){
+//         console.log(`Detected 5`);
+//         continue;                          // 5 will not be printed and remaining loop will execute as it is
+//     }
+//     console.log(`Value of is is ${index}`);
+// }
+
+/**** Higher Order Array Loops *****/ 
+
+// for of
+
+// ["", "", ""] -> Array of Strings
+// [{}, {}, {}] -> Array of Object
+
+const arr = [1, 2, 3, 4, 5];
+
+for (const num of arr) {
+    console.log(num);        
 }
+
+const greetings = "Hello World";
+for (const greet of greetings) {
+    console.log(`Each character is ${greet}`); 
+}
+
+// Maps
+const map = new Map()
+
+
 
 
