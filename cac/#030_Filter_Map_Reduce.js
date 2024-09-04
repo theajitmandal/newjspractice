@@ -36,6 +36,7 @@ console.log(newNums);
 const myNewNums = [];
 
 const NewNums = [];
+const newNewNums = [];
 
 myNums.forEach( (item) => {
     if(item > 4){
@@ -45,5 +46,6 @@ myNums.forEach( (item) => {
 
 console.log(myNewNums);
 console.log(NewNums);
+console.log(newNewNums);
 
 
