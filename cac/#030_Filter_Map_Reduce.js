@@ -44,5 +44,6 @@ myNums.forEach( (item) => {
 })
 
 console.log(myNewNums);
+console.log(NewNums);
 
 
