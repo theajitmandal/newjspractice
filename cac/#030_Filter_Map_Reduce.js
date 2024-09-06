@@ -49,5 +49,7 @@ console.log(myNewNums);
 console.log(NewNums);
 console.log(newNewNums);
 console.log(newNewNewNums);
+console.log(newNewNewNums);
+console.log(newNewNewNewNums);
 
 
