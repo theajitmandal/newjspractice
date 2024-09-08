@@ -47,6 +47,7 @@ console.log(Math.trunc(4.6));
 console.log(Math.trunc(-99.2));
 console.log(Math.trunc(89.0));
 console.log(Math.trunc(898.002));
+console.log(Math.trunc(898789.002));
 
 // Practice Time : If the argument is a +ve number, Math.trunc() is equivalent to Math.floor otherwise Math.trunc() is 
 // equivalent to Math.ceil()
