@@ -41,6 +41,7 @@ console.log(Math.max(0, 150, 30, 20, -8, -200));
 console.log(Math.random());
 console.log(Math.random()*10);
 console.log(Math.floor(Math.random()*10)); //between 0 to 9
+console.log(Math.floor(Math.random()*10)); //between 0 to 9
 
 /* Math.trunc() -> returns the integer part of a number) */
 console.log(Math.trunc(4.6));
