@@ -55,6 +55,7 @@ console.log(Math.trunc(809192980789.001200714));
 console.log(Math.trunc(80196321944298066789.00120045789714));
 console.log(Math.trunc(8019333632194429778066789.001202204555789714));
 console.log(Math.trunc(8019666333632194429778066789.001202277704555789714));
+console.log(Math.trunc(801966666333632194429778066789.00120227744704555789714));
 
 // Practice Time : If the argument is a +ve number, Math.trunc() is equivalent to Math.floor otherwise Math.trunc() is 
 // equivalent to Math.ceil()
