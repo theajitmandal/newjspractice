@@ -52,5 +52,3 @@ console.log(newNewNums);
 console.log(newNewNewNums);
 console.log(newNewNewNums);
 console.log(newNewNewNewNums);
-
-

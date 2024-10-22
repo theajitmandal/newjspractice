@@ -51,6 +51,14 @@ console.log(Math.trunc(898.002));
 console.log(Math.trunc(898789.002));
 console.log(Math.trunc(89998789.0020014));
 
+//lets practice
+console.log(Math.trunc(5.6));
+console.log(Math.trunc(-199.2));
+console.log(Math.trunc(898.0));
+console.log(Math.trunc(8981.002));
+console.log(Math.trunc(8987189.002));
+console.log(Math.trunc(899981789.0020014));
+
 console.log(Math.trunc(809192980789.001200714));
 console.log(Math.trunc(80196321944298066789.00120045789714));
 console.log(Math.trunc(8019333632194429778066789.001202204555789714));
