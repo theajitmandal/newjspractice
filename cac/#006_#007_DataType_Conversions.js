@@ -29,7 +29,7 @@
 
 // 1 => true; 0 => false
 // "" => false
-// "Ajit" => true
+// "Ajit" => true //"Ajit" is not boolean but also gives true
 
 // let someNumber = 40;
 
@@ -70,9 +70,9 @@
 
 // let num1, num2, num3;
 // num1 = num2 = num3 = 2 + 2;
-//Dont write such codes write readable codes
+// Dont write such codes write readable codes
 
-// let gameCounter = 50;
-// // gameCounter++;
-// ++gameCounter;
-// console.log(gameCounter);
+let gameCounter = 50;
+// gameCounter++;
+++gameCounter;
+console.log(gameCounter);

@@ -4,7 +4,7 @@
 // "use strict" -> treats all the codes of javascript as newer standard version
 //Javascript browser is inside browser engine
 
-//alert( 3 + 3); // we are using nodejs, not browser
+//alert(3 + 3); // we are using nodejs, not browser
 
 // console.log(3 + 3);
 
