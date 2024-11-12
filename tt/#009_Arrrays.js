@@ -137,7 +137,8 @@ We use for loop to navigate through the each elements of an array
 /* Array.prototype.find();
     ~ arr.find(callback(element[index, [array]])[thisArg])
     ~ returns the found element in the array, if some element in the arrary satisfies the testing function, or
-    undefined if not found. Only problem is that it returns only one element.
+    undefined if not found. Only problem is that it returns only one element (means the first element 
+    that satisfies the condition).
 */
 
 // Example

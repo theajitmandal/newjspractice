@@ -14,8 +14,8 @@ const repoCount = 25;
 
 const gameName = new String('AjitMan');
 
-// console.log(gameName[0]);
-// console.log(gameName.__proto__);
+console.log(gameName[0]);
+console.log(gameName.__proto__);
 
 // console.log(gameName.length);
 // console.log(gameName.toUpperCase); //gives [Function: toUpperCase]
@@ -52,20 +52,3 @@ console.log(url.includes('country'));
 
 const newPracticeString = "This_is_my_country";
 console.log(newPracticeString.split('_'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
