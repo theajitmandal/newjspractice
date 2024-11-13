@@ -31,13 +31,16 @@ const arr = [2, 4, 6, 8, 2, 10];
 // console.log(arr.indexOf(14));
 // console.log(arr.lastIndexOf(2));
 
-const findElem = arr.find((elem) => {
-    // console.log(elem<5);
-    return elem>8;
-})
+// const findElem = arr.find((elem) => {
+//     // console.log(elem<5);
+//     return elem>8;
+// })
 console.log(findElem);
 
 
 // const findElem = arr.find((elem) => elem<8);
 // console.log(findElem);
+
+const findElem = arr.find((elem) => elem<=25);
+console.log(findElem);
 
