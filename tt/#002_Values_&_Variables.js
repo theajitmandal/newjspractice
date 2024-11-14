@@ -1,7 +1,7 @@
 
 //             var myName = "Ajit";
 
-// Here, var is a variable(Key), myName is a variable and Ajit is a value
+// Here, var is a variable(Key), myName is a variable name and Ajit is a value
 
 // Variables naming convention
 /*  1. The first character must be a letter or an underscore (_) or a dollar ($) sign. 

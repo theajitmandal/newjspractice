@@ -56,7 +56,7 @@ a single numerical value.*/
 
 //Example
 // var num = 15;
-// var newNum = ++num; //++num means same 16 and original value of numm will be also be incremented by 1
+// var newNum = ++num; //++num means same 16 and original value of num will be also be incremented by 1
 // console.log(num);
 // console.log(newNum);
 

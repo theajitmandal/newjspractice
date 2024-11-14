@@ -58,11 +58,11 @@
 // console.log(Number.NaN); //NaN ~ Important
 // console.log(Number.NaN === NaN); //false
 // console.log(Number.isNaN(NaN)); //true
-// console.log(Number.isNaN(fullName)); //false
+// console.log(Number.isNaN(fullName)); //false -> Confusion because fullName is String
 
 // Some Important Notes:
 // isNaN(Nan) -> true
-// isNaN(fullName) -> false
+// isNaN(fullName) -> false -> Confusion
 // Number.true -> true
 // Number.false -> false
 

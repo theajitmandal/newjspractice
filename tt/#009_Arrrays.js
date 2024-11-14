@@ -2,17 +2,21 @@
     FOR IN
     FOR OF
     FOR EACH
+    
     indexOf
     lastIndexOf
     includes
+
     find
     findIndex
     filter
+
     sort
+
     push
-    unshift
+    unshift (for understanding ~ unshift means to add)
     pop
-    shift
+    shift (for understanding ~ shift means to remove)
 
     slice (as read in cac arrays.js)
     splice
@@ -90,6 +94,8 @@ We use for loop to navigate through the each elements of an array
 
     // FOR...EACH cannot break in the middle, starts with the 1st data and goes upto the last data
     // FOR...EACH doesnot change original array, just it runs a function over each elements of original array
+    // FOR...EACH doesnot return value(gives undefined if return keyword is used inside function) 
+    // but consolelog can be used to display the values because it just runs a function for each elements of an array
 
     // Example: Program using FOR...EACH to increase each element of an array by 5
     // let newNum = [4, 6, 7, 8];
@@ -206,6 +212,7 @@ We use for loop to navigate through the each elements of an array
 
     // const count = animals.push('hen');
     // console.log(count); //gives new length of the array
+    // or, console.log(animals.push('hen'));
 
 /* Array.prototype.unshift();
     ~ The unshift() method adds one or more elements to the beginning of an array and returns new length of the array.
@@ -247,6 +254,16 @@ We use for loop to navigate through the each elements of an array
     // console.log(plants.shift()); //removes brocollo
     // console.log(plants); //returns from cabbage to cauli
 
+/* Array.prototype.slice();
+    ~ The shift() method returns the selected elements in a array as a new array. It selects from a given start
+    upto a (non inclusive) given end. It doesnot change the original array.
+    ~ Returning value is a new array containing the selected elements.
+
+    array.slice(start, end
+        start ~ Optional, default is 0, -ve numbers select fromt the end of array
+        end ~ Optional, Default is last element, -ve numbers select fromt the end of array
+*/
+
 /* Challenge Time:
         const months = ['Jan', 'march', 'April', 'June', 'July'];
     01. Add Dec at the end of an array?
@@ -260,6 +277,7 @@ We use for loop to navigate through the each elements of an array
     // Splice Method: Array.Splice(index no. where elements to be added, 
     //                              no. of elements to be deleted after added elements,
     //                              element to be added)
+    //              Runs on the original array
 
     // const months = ['Jan', 'march', 'April', 'June', 'July'];
     
