@@ -198,6 +198,7 @@ var a = a - b;
 console.log(`After Swapping: a = ${a} & b = ${b}`);
 console.log(a);
 console.log(b);
+console.log(b);
 
 
 
