@@ -189,21 +189,83 @@
 // console.log(num);
 // console.log(newNum);
 
-var a = 5;
-var b = 10;
-console.log(`Before Swapping: a = ${a} & b = ${b}`);
-var a = a + b;
-var b = a - b;
-var a = a - b;
-console.log(`After Swapping: a = ${a} & b = ${b}`);
-console.log(a);
-console.log(b);
-console.log(b);
+// var a = 5;
+// var b = 10;
+// console.log(`Before Swapping: a = ${a} & b = ${b}`);
+// var a = a + b;
+// var b = a - b;
+// var a = a - b;
+// console.log(`After Swapping: a = ${a} & b = ${b}`);
+// console.log(a);
+// console.log(b);
+// console.log(b);
+
+// const arr = [25, 36, 49, 64, 81];
+
+// const newArr = arr.map((e) => e*2).filter((e) => e > 60).reduce((a, e) => a+=e);
+// console.log(newArr);
+
+// *************************************** Just Practice and Del... ************************************************* //
+
+// function myName(){
+//     console.log("A");
+//     console.log("J");
+//     console.log("I");
+//     console.log("T");
+// }
+
+// myName  // function reference -> Doesnot print or execute anything 
+// myName() // function execution
+
+// function add(a, b){ //a & b are parameters
+//     return a + b;
+// }
+
+// // add(2, 3); //doesnot print anything
+// console.log(add(2, 3)); //2 & 3 are arguments
+
+// const pro = () => {
+//     const a = 5;
+//     const b = 6;
+//     console.log(`The product is ${(a)* (b)}`);
+// }
+// pro();
+
+// const pro = () => {
+//     console.log(`The product is ${(a=5)* (b=7)}`);
+// }
+// pro();
+
+// const prod = () => console.log(`The product is ${(a = 8) * (b = 8)}`);
+// prod();
 
 
+// if (true) {
+//     var userName = "Ajit";
+//     if (userName === "Ajit") {
+//         var website = " YouTube ";
+//         console.log(userName + website);
+//     }
+//     console.log(website);
+// }
+
+// console.log(userName);
 
 
+function addOne (num) {
+    return num + 1;
+}
 
+addOne(5); //can be written before function declaration
+
+// In above code , value will not be printed only function will be called
+
+// addTwo(5); //gives erron because of below way of declaring function (Hoisting Concept we will learn later)
+var addTwo = function(num) { //functions cabe be written in this way too...
+    return num + 2;
+}
+
+// addTwo(7);
 
 
 

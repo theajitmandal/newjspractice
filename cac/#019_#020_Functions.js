@@ -84,7 +84,7 @@
 // console.log(calculateCartPrice(2));
 // console.log(calculateCartPrice(2, 4, 10, 16)); //sends only first argument if not used rest in function definition
 
-/***** Passing objects into function *****/
+/***** Passing objects and arrays into function *****/
 const user = {
     username: "ajjit",
     price: 400

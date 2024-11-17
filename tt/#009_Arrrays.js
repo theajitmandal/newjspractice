@@ -382,9 +382,10 @@ We use for loop to navigate through the each elements of an array
     a map() method on an array. That's something you can't do with forEach() because it returns an undefined.
     */
 
-    // Challenge Time
+    // ******* Challenge Time *******
     // 01. Find the square root of each element in an array. let arr = [25, 36, 49, 64, 81];
     // 02. Multiply each element by 2 and return only those element which are greater than 60?
+    // 03. 
 
     // Solutions:
     // 01
@@ -470,6 +471,13 @@ We use for loop to navigate through the each elements of an array
     // console.log(arr.map((currElem) => currElem * 2).filter((currElem) => currElem > 60)
     // .reduce((acc, currElem) => acc += currElem));
 
+    // ********** Very Important Question to practice for the concept of map, filter and reduce **********
+    /* Given arr = [25, 36, 49, 64, 81] :
+        a. Multiply each elements by 2
+        b. Display the elements greater tham 60
+        c. Find their sum (Sum will be 460)
+    */
+
     // How to flatten an array? (How to convert 2D and 3D array into one dimensional array?) 
     // Here In reduce method, concat is used, arrays can also be flattened using flat()
 
@@ -513,6 +521,11 @@ We use for loop to navigate through the each elements of an array
     const arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
     const arr11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+
+
+    
+    
     
 
 
