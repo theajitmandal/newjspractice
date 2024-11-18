@@ -22,7 +22,7 @@
 // Comparison Operators
 // <, >, <=, >=, ==, !=, ===(checks both type and value), !==(not equal value or equal type)
 // 3 != 2 -> true        |              != different values then true, for Equal to =, same values
-// 3 !== 2 -> true       |              !== differnet values or differnet types then true
+// 3 !== 2 -> true       |              !== differnet values or different types then true
 
 // const temperature = 35;
 // if (temperature < 40){

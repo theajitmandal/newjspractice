@@ -1,4 +1,4 @@
-/***** DOM in JS *****/
+/***** DOM (Document Oject Model) in JS *****/
 
 /***** Window vs Document *****/
 
@@ -40,10 +40,66 @@
 
 /*
         ***** DOM vs BOM *****
-    The DOM is the Document Object MOdel which deals with the document, the HTML elements themselves,
-    eg: document and all traversal your would do in it, events, etc.
+    The DOM is the Document Object Model which deals with the document, the HTML elements themselves,
+    eg: document and all traversal you would do in it, events, etc.
         For eg. change the background color to red
         document.body.style.background = "red"
 
+    The BOM is the Browser Object Model, which deals with browser components aside from the document,
+    like history/location, navigator and screen (as well as some others that vary by broswer) 
+    Or,
+    In simple meaning, all the Window Operations which comes under BOM are performed using BOM.
+
+    Functions alert/confirm/prompt are also a part of BOM they are directly not related to the document
+    but represent pure browser methods of communicating with the users.
+
+    alert(location.href) -> shows current url
+        if confirm("Want to visit YouTube.com"){
+        location href = "https://www.youtube.com/youtube"           -> redirects the browser to the link
+        }
+*/
+
+/* 
+        Navigate through DOM
+    01. document.documentElement -> returns the element that is the root element of the document
+    02. document.head
+    03. document.body
+    04. document.body.childNodes (include tab, enter & whitespaces)
+    05. document.body.children(without textnodes, only regular elements)
+    06. document.childNodes.length
+
+    document.body.hasChildNodes() -> returns True if there is child Nodes
+*/
+
+
+// Practice
+// How to check whether an element has child nodes or not? -> we will use hasChildNodes()
+
+// document.body.firstChild -> gives text
+// document.body.firstElementChild -> shows first child element
+// const firstChild = document.body.firstElementChild.firstElementChild -> undefined
+// firstChild -> <div class = "child-one">Child One</div>
+// firstChild.style.color = "red"
+
+/* Searching using Query Selector */
+/*
+    const childTwo = document.querySelector('.child-two')
+*/
+
+
+/*
+    Interview Questions
+
+    Differentiate between getElementById and querySelector?
+
+    getElementById:
+        syntax: element = document.getElementById(id) returns a reference to the element by its ID. If the element with
+        the specified ID is not in the document, it will return null.
+
+    querySelector:
+        syntax: element = document.querySelector(selector) returns the first element within the document that matches
+        the specified group of selectors, or null if no matches are formed.
+
+        getElementById works for the element having ID attribute but query selector doesnot need ID attribute.
 */
 

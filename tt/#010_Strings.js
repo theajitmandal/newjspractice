@@ -8,6 +8,28 @@
     let ytName = new String("Mandal Ajit") //creating string using string constructor
 */
 
+/*
+    .length
+
+    indexOf
+    lastIndexOf
+
+    Search
+
+    slice
+    splice
+    substr
+
+    replace
+
+    charAt
+    charCodeAt
+
+    concat
+    trim
+
+*/
+
 // How to find the length of the string?
 // String.prototype.length : Returns the length of the string
 
@@ -81,7 +103,7 @@
 */
 
     // let res2 = str.slice(3, -2); //starts from the 3rd index element of string and removes 2 characters from the end
-    // console.log(res2);
+    // console.log(res2);           //or counts the elements from the right as -ve starting from -1,-2, -3, and so on
 
 // Challenge: Display only 280 characters of a string like the one used in Twitter.
 

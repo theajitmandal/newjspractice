@@ -267,6 +267,16 @@ var addTwo = function(num) { //functions cabe be written in this way too...
 
 // addTwo(7);
 
+// Today
+const a = 5;
+(a >= 18) ? console.log("Can Vote") : console.log("Cannot Vote");
+
+
+
+
+
+
+
 
 
 
