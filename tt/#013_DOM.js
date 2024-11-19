@@ -8,14 +8,14 @@
     global object and any operations related to entire
     browser window can be a part of window object.
 
-02  All the members like objects, methods or properties,    Whereas in the DOM, we need to refer the document 
+02  All the members like objects, methods or properties,    Whereas in the DOM, we need to refer the document,
     if they are the part of window object then we do not    if we want to use the document object, methods or properties.
     refer the window object.
 
-04  Window has methods properties and object.               Document is just the object of the global object that is
+04  Window has methods, properties and object.               Document is just the object of the global object that is
     Example: setTimeout() or setInterval() are the          Window, which deals with the document the HTML
     methods, whereas Document is the object of the          elements themselves.
-    window and it also has a screen object with properties
+    window and it also has a 'SCREEN' object with properties
     describing the physical display such as innerHeight,
     innerWidth and more.
 */
@@ -50,7 +50,7 @@
     Or,
     In simple meaning, all the Window Operations which comes under BOM are performed using BOM.
 
-    Functions alert/confirm/prompt are also a part of BOM they are directly not related to the document
+    Functions LIKE alert/confirm/prompt are also a part of BOM they are directly not related to the document
     but represent pure browser methods of communicating with the users.
 
     alert(location.href) -> shows current url

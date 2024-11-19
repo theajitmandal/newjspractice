@@ -252,24 +252,43 @@
 // console.log(userName);
 
 
-function addOne (num) {
-    return num + 1;
-}
+// function addOne (num) {
+//     return num + 1;
+// }
 
-addOne(5); //can be written before function declaration
+// addOne(5); //can be written before function declaration
 
-// In above code , value will not be printed only function will be called
+// // In above code , value will not be printed only function will be called
 
-// addTwo(5); //gives erron because of below way of declaring function (Hoisting Concept we will learn later)
-var addTwo = function(num) { //functions cabe be written in this way too...
-    return num + 2;
-}
+// // addTwo(5); //gives erron because of below way of declaring function (Hoisting Concept we will learn later)
+// var addTwo = function(num) { //functions cabe be written in this way too...
+//     return num + 2;
+// }
 
 // addTwo(7);
 
 // Today
-const a = 5;
-(a >= 18) ? console.log("Can Vote") : console.log("Cannot Vote");
+// const a = 5;
+// (a >= 18) ? console.log("Can Vote") : console.log("Cannot Vote");
+
+// 19th Nov, 2024
+
+// const coding = ["js", "python", "java", "cpp", "ruby"];
+
+
+// const values = coding.forEach((item) => {
+//     // console.log(item);   
+//     // return item;    
+// })
+
+// console.log(values);
+
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const newNums = myNums.filter( (item) => item > 4  );
+console.log(newNums);
+
+
 
 
 
