@@ -1,4 +1,5 @@
 /*
+    9:40.....
     Events in JS
     01. Using Inline events alert()
     02. By calling a function (Most commong way of writing)
