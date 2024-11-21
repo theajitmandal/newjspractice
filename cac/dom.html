@@ -4,11 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Learning</title>
+    <style>
+      .bg-black{
+        background-color: #212121;
+        color: #ffff;
+      }
+    </style>
   </head>
   <body>
     <div class="bg-black">
-      <h1>DOM Learning on YouTube</h1>
+      <h1 id="title" class="heading">DOM Learning on Youtube <span style="display:none"> Test Text </span></h1>
       <p>Lorem ipsum dolor sit amet.</p>
     </div>
   </body>
 </html>
+
+<!-- 
+  Open Console, Run and check the following codes there in the above web page:
+
+  document.getElementById('title')            -> givesh whole <h1 id="title" class="heading">DOM Learning on YouTube</h1>
+  document.getElementById('title').id         -> title
+  document.getElementById('title').class      -> undefined
+  document.getElementById('title').className  -> heading
+
+  document.getElementById('title').getAttribute('id')     -> title
+  document.getElementById('title').getAttribute('class')  -> heading
+
+  document.getElementById('title').setAttribute('class', 'test')      -> new attribute class="test" 
+                                                                        will be set and seen in console.log
+                                                                        and overrides the previous attribute
+  
+  document.getElementById('title').setAttribute('class', 'test', 'heading') -> both new attribute class="test" 
+                                                                        and class="heading" will be set and seen in log
+
+
+  Try to change the CSS of the texts:
+  const title = document.getElementById('title')
+  title.sytle.backgroundColor = "green"
+  title.style.padding = "15px"
+  title.style.borderRadius = "5px"
+  title.style.borderRadius = "15px"
+
+  Adding Contents:
+  title.textContent ->  DOM Learning on YouTube
+  title.innerHTML   ->  DOM Learning on YouTube
+  title.innerText   ->  DOM Learning on YouTube
+
+  If <span> is added in the above code then:::
+  <h1 id="title" class="heading">DOM Learning on Youtube <span style="display:none"> Test Text </span> </h1>
+
+  title.textContent ->  DOM Learning on YouTube Test Text                                         (shows the invisible text too)
+  title.innerHTML   ->  'DOM Learning on Youtube <span style="display:none"> Test Text </span>'   (shows the inner HTML also)
+  title.innerText   ->  DOM Learning on YouTube                                                   (shows only the visible text)
+
+  
+
+-->

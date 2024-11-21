@@ -34,3 +34,6 @@
 
 // What is DOM Manipulation? (Try to explain thwrough a website)
 // Hint: Open any website, choose any heading and try to change the name of that heading....
+
+//learn from 15th minute
+
