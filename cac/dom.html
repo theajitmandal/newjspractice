@@ -14,7 +14,18 @@
   <body>
     <div class="bg-black">
       <h1 id="title" class="heading">DOM Learning on Youtube <span style="display:none"> Test Text </span></h1>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorum est mollitia cupiditate. Quidem, molestiae?</h2>
       <p>Lorem ipsum dolor sit amet.</p>
+      <input type="password">
+      <hr/>
+      <ul>
+        <li class="list-i">Apple</li>
+        <li class="list-i">Banana</li>
+        <li class="list-i">Car</li>
+        <li class="list-i">Dog</li>
+      </ul>
     </div>
   </body>
 </html>
@@ -56,6 +67,69 @@
   title.textContent ->  DOM Learning on YouTube Test Text                                         (shows the invisible text too)
   title.innerHTML   ->  'DOM Learning on Youtube <span style="display:none"> Test Text </span>'   (shows the inner HTML also)
   title.innerText   ->  DOM Learning on YouTube                                                   (shows only the visible text)
+
+  // Query Selector
+  document.querySelector('h1')  -> Selects the first h1 element
+  document.querySelector('#title')  -> Selects the first element with id="title"
+  document.querySelector('.heading')  -> Selects the first element with class="heading"
+  
+  document.querySelector('input[any attributes of input element]') -> Selects the required attributes of input element
+  e.g: document.querySelector('input[type="password"]')
+
+  document.querySelector('p:first-child') -> any CSS Selector can be used
+
+  // very important concepts
+
+  const myul = document.querySelector('ul');
+  const turnGreen = myul.querySelector('li');
+  turnGreen.style.backgroundColor = "green";
+  turnGreen.style.padding = "10px";
+
+  turnGreen.innerText
+  turnGreen.innerText = "five"
+
+  // Query Selector All
+  querySelectorAll('li')  -> gives NodeList
+
+  const tempLiList = querySelectorAll('li')
+  tempLiList.style.color = 'green'  -> shows error (tempLiList is not defined)
+
+  tempLiList[0].style.color = 'green' -> This is correct
+
+  // forEach can also be run on the above NodeList as follows:
+    tempLiList.forEach((e)=>e.style.color="red");
+
+  In NodeList, use forEach because map cannot be used. Convert NodeList into array if your want to use Map. 
+  // Check on its prototype.
+
+
+  // Differences between QuerySelector and QuerySelectorAll
+
+  //getElementByClassName
+  document.getElementsByClassName('list-i')  -> gives HTML collection (Check its prototype, forEach cannot be used)
+
+  const tempClassList = document.getElementsByClassName('list-i');
+  tempClassList.forEach((e) => console.log(e));   -> gives error (tempClassList.forEach is not a function)
+
+  // HTMLCollection should be coverted into Array to use forEach
+  Array.from(tempClassList) -> converting HTML Collection into Array
+
+  const myConvertedArray =   Array.from(tempClassList);
+  myConvertedArray.forEach((i) => i.style.color = "blue" );   -> now forEach can be used
+
+  // Practice: Open any website and select all H2 elements and convert their background color into red and text into black.
+  const myH2 = document.querySelectorAll('h2');
+  myH2.forEach((i) => {
+    i.sytle.backgroundcolor: "red",
+    i.style.color : "black"
+  })
+
+
+
+  
+
+
+
 
   
 
