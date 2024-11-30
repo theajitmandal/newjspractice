@@ -289,6 +289,7 @@ const numsNumsNumss = [2, 4, 6, 8, 10, 12, 14, 15];
 
 const newNums = myNums.filter( (item) => item > 4  );
 console.log(newNums);
+console.log(newNewNums);
 
 
 
