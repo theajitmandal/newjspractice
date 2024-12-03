@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Elements</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing Image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="first"
+            src="https://images.pexels.com/photos/5929927/pexels-photo-5929927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="first"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="second"
+            src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="second"
+          />
+        </li>
+
+        <li>
+          <img
+            width="200px"
+            id="third"
+            src="https://images.pexels.com/photos/4318822/pexels-photo-4318822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="third"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="fourth"
+            src="https://images.pexels.com/photos/17609146/pexels-photo-17609146/free-photo-of-woman-putting-strawberries-into-a-basket.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="fourth"
+          />
+          <!-- <img
+        width="200px"
+        id="fourth"
+        src="https://images.pexels.com/photos/17609146/pexels-photo-17609146/free-photo-of-woman-putting-strawberries-into-a-basket.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="fourth" 
+        onclick="alert('Fruits clicked')"     This way of adding events is not preferable
+      /> -->
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="fifth"
+            src="https://images.pexels.com/photos/18873058/pexels-photo-18873058/free-photo-of-hot-air-balloons-flying-in-cappadocia-at-sunrise.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="fifth"
+          />
+        </li>
+        <li>
+          <a style="color: aliceblue" href="https://www.google.com" id="google"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // JS Events is sequentially run still there is some exception...
+    // Dont inject JS inside HTML codes... (like in above line 49)
+
+    // document.getElementById('fourth').onclick = function(){
+    //     alert("fruits clicked");
+    // }
+    // The above approach looks very good but there is some problem. When onclick event is triggered onclick
+    // events can give some information as it doesnot give much features so we need to use Event Listener
+    // becase Event Listener can give propagation ability
+
+    // Third and Best Approach
+    // addEventListener is very powerful becase it can listen different events like of mouse, keyboard, etc.
+    // (Interview Question) in below code third parameter is 'False'which is default false so is not necessary to write
+    // and can be ignored
+    // document.getElementById('fourth').addEventListener('click', function(){}, false)
+
+    // document.getElementById('fourth').addEventListener('click', function(){
+    //     alert("Fruits Clicked");
+    // })
+
+    // attachEvent() -> was used earlier when Internet Explorer used
+    // JQuery -> .on Events was used when it was popular
+
+    // document.getElementById('fourth').addEventListener('click', function(e){
+    //     console.log(e);
+    // })
+
+    // Interview Questions Related to Events
+    // 01 When mouse was clicked on any div or inside web page, what was it view, timestamps, height and width of window
+    // 02 Make an application to draw a circle in the positiion where user clicks the mouse
+    // 03 Create an application show the time when user clicked the mouse
+
+    // Some Basic Events:
+    // type(Keyboard events, mouse events)
+    // timestamp
+    // defaultPrevented -> to stop the default behaviour of elements e.g when form is filled, on submit,say event to prvent
+    // target
+    // toElement
+    // srcElement
+    // currentTarget
+    // position related -> clientX, ClientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // Events Propagation
+
+    // document.getElementById('fourth').addEventListener('click', function(e){
+    //     console.log(e);
+    // }, true)
+
+    // document.getElementById('fourth').addEventListener('click', function(e){
+    //     console.log(e);
+    // }, false)
+
+    // Above Both scenario is same...
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('fourth').addEventListener('click', function(e){
+    //     console.log("Clicked inside the fruit");
+    // }, false)
+
+    // When fourth id element is cliked then output will be:
+    // Clicked inside the fruit
+    // Clicked inside the ul
+
+    // But in the following code:
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside the ul");
+    // }, true)
+
+    // document.getElementById('fourth').addEventListener('click', function(e){
+    //     console.log("Clicked inside the fruit");
+    // }, true)
+
+    // When fourth id element is cliked then output will be:
+    // Clicked inside the ul
+    // Clicked inside the fruit
+
+    // Third parameter 'False' means the it is Event Bubbling means the inner HTML to outer HTML (Down to Up) or
+    // Inside to Outside
+
+    // When Third Paremeter is 'True' it is Event Capturing means that Outer HTMl to Inner HTML.
+
+    // FOr Stopping Propagation or Bubbling -> stopPropagation()
+    // document.getElementById("fourth").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("Clicked inside the fruit");
+    //     e.stopPropagation();
+    //   },
+    //   false
+    // );
+
+    // Changing default behaviour of Elements
+    // document.getElementById("google").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("Goolge Clicked");
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //   },
+    //   false
+    // );
+
+    // run above and down code at once and try to learn the effects of stopPropagation() (Comment Uncomment it and learn)
+
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("Clicked inside the ul");
+    //   },
+    //   false
+    // );
+
+    // Lets create a project in which when any images inside ul is clicked that image should be deleted
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     // console.log((e.target.parentNode));
+    //     let removeIT = e.target.parentNode    
+    //     // removeIT.remove();                       // valid method
+    //     removeIT.parentNode.removeChild(removeIT);  // valid method
+    // }, false)
+
+    //Above code gives error when <li> <a style="color: aliceblue" href="https://www.google.com" id="google">Google</a></li>
+    //is clicked...because when <a> is clicked its parentNode will be ul
+        document.querySelector('#images').addEventListener('click', function(e){
+        console.log((e.target.tagName));
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);     
+            let removeIT = e.target.parentNode    
+            // removeIT.remove();                       // valid method
+            removeIT.parentNode.removeChild(removeIT);  // valid method
+        }       
+    }, false)
+
+  </script>
+</html>

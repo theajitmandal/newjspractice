@@ -1,3 +1,7 @@
+
+/* DOM 32, 33, 34 -> in domone.html, domtwo.html, domthree.html, domfour.html */
+/* DOM 35 -> 4 Mini Projects in NewProjects Folder */
+
 // DOM Diagram
 /*
                             Window
