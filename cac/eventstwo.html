@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Learning Async & Await</h2>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // handler, callback, function -> almost same but little difference 
+    // (Handler is function without name but sometimes reference may be given)
+    // setTimeout(function(){
+    //     console.log("Ajit");        
+    // }, 2000);
+
+    // const sayAjit = function(){
+    //     console.log("Ajit Mandal");
+    // }
+    // setTimeout(sayAjit, 2000);
+
+    const changeText = function(){
+        document.querySelector('h2').innerHTML = "Lets read programming";
+    }
+    // setTimeout(changeText, 2000);
+
+    const changeMe = setTimeout(changeText, 2000);
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe);
+        console.log("Stopped");        
+    })
+
+</script>
+</html>

@@ -2,7 +2,7 @@
 
 //Scope -> {....................}
 
-//Use const or let for variables in new Coding, old Coding use Var
+// Use const or let for variables in new Coding, old Coding use Var
 
 // ~ // Single Comment
 // ~ /* ................... */ Multi-Line Comment
