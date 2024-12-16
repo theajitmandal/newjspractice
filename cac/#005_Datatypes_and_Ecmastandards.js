@@ -7,6 +7,7 @@
 //alert(3 + 3); // we are using nodejs, not browser
 
 // console.log(3 + 3);
+// console.log("Hello");
 
 //JS documentation links
 // https://tc39.es/ecma262/
@@ -19,7 +20,7 @@
 // boolean
 // null ~ Standalone Value -> Representation of empty value (example: let state = null), not undefined
 // undefined ~ when value is not assigned
-// symbol ~ used when we learn react and make different components -> unique
+// symbol ~ used when we learn react and make different components -> unique 
 // object
 // array
 
