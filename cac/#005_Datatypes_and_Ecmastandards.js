@@ -8,6 +8,9 @@
 
 // console.log(3 + 3);
 // console.log("Hello");
+// console.log("Hi");
+
+
 
 //JS documentation links
 // https://tc39.es/ecma262/
