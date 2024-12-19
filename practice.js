@@ -283,13 +283,38 @@
 
 // console.log(values);
 
-const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const nums = [2, 4, 6, 8, 10, 12];
-const numsNumsNumss = [2, 4, 6, 8, 10, 12, 14, 15];
+// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const nums = [2, 4, 6, 8, 10, 12];
+// const numsNumsNumss = [2, 4, 6, 8, 10, 12, 14, 15];
 
-const newNums = myNums.filter( (item) => item > 4  );
-console.log(newNums);
-console.log(newNewNums);
+// const newNums = myNums.filter( (item) => item > 4  );
+// console.log(newNums);
+// console.log(newNewNums);
+
+// 19th Dec
+
+// let bioData = {
+//     myName : "Ajit Mandal",
+//     myAge: 27,
+//     getData: function(){
+//         console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+//     }
+// }
+// console.log(bioData.myName);
+// console.log(bioData.getData());
+
+let bioData = {
+    myName : "Ajit Mandals",
+    myAge: 27,
+    getData(){
+        console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+    }
+}
+console.log(bioData.myName);
+console.log(bioData.getData());
+
+
+
 
 
 
