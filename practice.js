@@ -303,15 +303,222 @@
 // console.log(bioData.myName);
 // console.log(bioData.getData());
 
-let bioData = {
-    myName : "Ajit Mandals",
-    myAge: 27,
-    getData(){
-        console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
-    }
+// let bioData = {
+//     myName : "Ajit Mandals",
+//     myAge: 27,
+//     getData(){
+//         console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+//     }
+// }
+// console.log(bioData.myName);
+// console.log(bioData.getData());
+
+// let bioData = {
+//     myName: {
+//         firstName: "Ajit",
+//         secondName: "Mandal"
+//     },
+//     myage: 26
+// }
+// console.log(bioData.myName.firstName);
+
+// console.log(this);
+
+// function myName(){
+//     console.log(this);    
+// }
+// myName();
+
+// let myNames = "Ajit";
+// function myName(){    
+//     console.log(this.myNames);
+// }
+// myName();
+
+// const obj = {
+//     myAge : 26,
+//     myName(){
+//         console.log(this);        
+//         console.log(this.myAge);        
+//     }
+// }
+// obj.myName();
+
+// const obj = {
+//     myAge : 26,
+//     myName : () => {
+//         console.log(this);        
+//     }
+// }
+// obj.myName();
+
+// const myBioData = ['Ajit', 'Mandal', 26];
+
+// let myFName = myBioData[0];
+// let myLName = myBioData[1];
+// let myAge = myBioData[2];
+
+// console.log(myAge);
+
+// let [myFName, myLName, myAge] = myBioData;
+// console.log(myFName);
+// console.log(myLName);
+// console.log(myAge);
+
+// let [myFName, myLName, myAge, myEducation="CS"] = myBioData;
+// console.log(myBioData);
+// console.log(myEducation);
+
+// const myBioData = {
+//     myFName : 'Ajit',
+//     myLName : 'Mandal',
+//     myAge : 26
+// }
+
+// // console.log(myBioData.myAge);
+
+// const {myFName, myLName, myA, myEducation="CS"} = myBioData;
+// console.log(myFName);
+// console.log(myEducation);
+
+// let myName = 'Ajit';
+
+// const bioData = {
+//     [myName] : 'Hello, How are you?',
+//     [20+6] : 'is my Age',
+// }
+// console.log(bioData);
+
+// let myName = 'Ajit';
+// let myAge = 26;
+
+// // const bioData = {
+// //     myName: myName,
+// //     myAge: myAge,
+// // }
+
+// const bioData = {myName, myAge};
+// console.log(bioData.myName);
+// console.log(bioData.myAge);
+
+// const colors = ['red', 'blue', 'green'];
+// const myColors = ['red', 'blue', 'green', 'yellow', 'purple'];
+
+// const myNewColors = [...colors, 'yellow', 'purple'];
+// console.log(myNewColors);
+
+// const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink'];
+// const isBlackPresent = colors.includes('black');
+// const isPinkPresent = colors.includes('pink');
+
+// console.log(isBlackPresent);
+// console.log(isPinkPresent);
+
+// console.log(2**3);
+
+// let name = "Ajit".padStart(7);
+// console.log(name);
+
+// let myAge = "26".padEnd(5);
+// console.log(`My age is ${myAge} and my name is Ajit`);
+
+// const person = {
+//     name: 'Ajit',
+//     age: 26
+// }
+// // console.log(Object.values(person));
+// // console.log(Object.entries(person));
+
+// const myPersonArray = Object.entries(person);
+// console.log(myPersonArray[0]);
+// console.log(myPersonArray[0][0]);
+// console.log(myPersonArray[0][1]);
+// console.log(myPersonArray[1]);
+// console.log(myPersonArray[1][0]);
+// console.log(myPersonArray[1][1]);
+
+// const myBioData = {
+//     name: 'Ajit',
+//     age: 26
+// }
+// // const myNewBioData = {
+// //     name: 'Ajit',
+// //     age: 26,
+// //     education: 'CS'
+// // }
+// console.log(myBioData);
+// // console.log(myNewBioData);
+
+// const myNewBioData = {...myBioData, education: 'CS Major'};
+// console.log(myNewBioData);
+
+// const mulNumbers = function(...theArgs){
+//     let mul = 1;
+//     for (elements of theArgs){
+//         mul *= elements;
+//     }
+//     return mul;
+// }
+// console.log(mulNumbers(1, 2, 3));
+
+// const addNumbers = function(a, b){
+//     return a+b;
+// }
+// addNumbers(2,3);
+// console.log(addNumbers(2,3));
+
+// const myNewBioData = {
+//     name: 'Ajit',
+//     age: 26,
+//     education: 'CS'
+// }
+
+// const myNewArrBioData = Object.entries(myNewBioData);
+// const myNewObjBioData = Object.fromEntries(myNewArrBioData);
+// console.log(myNewBioData);
+// console.log(myNewArrBioData);
+// console.log(myNewObjBioData);
+
+const myNewBioData = {
+    name: 'Ajit',
+    age: 26,
+    education: 'CS'
 }
-console.log(bioData.myName);
-console.log(bioData.getData());
+
+const myNewArrBioData = Object.entries(myNewBioData);
+console.log(myNewBioData);
+console.log(myNewArrBioData);
+
+const myFlattenedArr = myNewArrBioData.flat();
+console.log(myFlattenedArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -36,7 +36,8 @@
 
 /*
     02. Calling Functions:
-        Defining a function does not execute it. A Javascript function is executed when 'something' invokes it (calls it).
+        Defining a function does not execute it. A Javascript function is executed when 'something' invokes it 
+        (calls it).
 
         sum();
         or,     console.log(sum()); -> calling inside console -> This gives undefined
@@ -120,4 +121,13 @@
         function(a, b) {
         return total = a + b;
         }
+
+        Important Concept to Understand:
+        
+        const addNumbers = function(a, b){
+            return a+b;
+        }
+        addNumbers(2,3);                -> doest print anything
+        console.log(addNumbers(2,3));   -> prints only if used console.log
+        
 */
