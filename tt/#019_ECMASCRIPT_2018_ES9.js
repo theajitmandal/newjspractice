@@ -1,5 +1,8 @@
 /*
     11:45    
+
+    ECMASCRIPT 2018/ES9
+
     1. Rest/Spread Properties: was introduced for objects, previously was introduced only for array
         Spread syntax can be used when all elements from an object or array need to be included in a new array or 
         object, or should be applied one-by-one in a function call's arguments list. 

@@ -1,5 +1,8 @@
 /*
     11:38
+
+    ECMASCRIPT 2017/ES8
+
     1. String  Padding
     2. Object.values()
     3. Object.entries()

@@ -1,5 +1,8 @@
 /*
     11:36
+    
+    ECMASCRIPT 2016/ES7
+
     1. Array Prototype.includes
         const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink'];
         const isBlackPresent = colors.includes('black');

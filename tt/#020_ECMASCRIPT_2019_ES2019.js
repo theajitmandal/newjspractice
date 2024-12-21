@@ -1,4 +1,8 @@
 /*
+    11:49
+    
+    ECMASCRIPT 2019/ES2019
+
     Array.prototype(flat, flatMap): to flatten array
         The flat() method of Array instances creates a new array with all sub-array elements concatenated into it 
         recursively up to the specified depth.

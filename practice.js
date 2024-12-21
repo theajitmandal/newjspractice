@@ -479,45 +479,49 @@
 // console.log(myNewArrBioData);
 // console.log(myNewObjBioData);
 
-const myNewBioData = {
-    name: 'Ajit',
-    age: 26,
-    education: 'CS'
-}
+// const myNewBioData = {
+//     name: 'Ajit',
+//     age: 26,
+//     education: 'CS'
+// }
 
-const myNewArrBioData = Object.entries(myNewBioData);
-console.log(myNewBioData);
-console.log(myNewArrBioData);
+// const myNewArrBioData = Object.entries(myNewBioData);
+// console.log(myNewBioData);
+// console.log(myNewArrBioData);
 
-const myFlattenedArr = myNewArrBioData.flat();
-console.log(myFlattenedArr);
+// const myFlattenedArr = myNewArrBioData.flat();
+// console.log(myFlattenedArr);
 
+// let oldNum = Number.MAX_SAFE_INTEGER;
+// console.log(oldNum);
+// console.log(9007199254740991n+12n);
+// let newNum = 9007199254740991n + 12n;
+// console.log(newNum);
+// console.log(typeof(newNum));
 
+// const myNames = {fName: 'Ajit'};
 
+// myNames.fName ??=  'AjitMandal';
+// console.log(myNames.fName);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// myNames.lName ??= 'Mandal';
+// console.log(myNames.lName);
 
 
+// function config(options) {
+//     options.duration ??= 100;
+//     options.speed ??= 25;
+//     console.log(options);
+//     return options;
+// }
+
+//     config({ duration: 125 }); 
+//     config({});
+//     console.log(config({}));
 
 
-
-
-
-
-
-
+    
+    
 
 
 
