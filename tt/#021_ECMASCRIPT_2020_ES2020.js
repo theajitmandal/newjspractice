@@ -68,10 +68,6 @@
 
                 config({ duration: 125 }); 
                 config({});
-                console.log(config({}));
-
-
-
-
+                console.log(config({}))
 
 */

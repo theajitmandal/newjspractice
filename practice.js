@@ -519,6 +519,19 @@
 //     config({});
 //     console.log(config({}));
 
+// x = 3.14;
+// console.log(x);
+
+"use strict";
+a = 3.14;
+console.log(a);
+
+
+
+
+
+
+
 
     
     
