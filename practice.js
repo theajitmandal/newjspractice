@@ -522,9 +522,55 @@
 // x = 3.14;
 // console.log(x);
 
-"use strict";
-a = 3.14;
-console.log(a);
+// "use strict";
+// a = 3.14;
+// console.log(a);
+
+// const add = (a, b) => {
+//     return a + b;
+// }
+
+// const sub = (a, b) => {
+//     return a - b;
+// }
+
+// const mul = (a, b) => {
+//     return a * b;
+// }
+
+// const calculator = (num1, num2, operator) => {
+//     return operator(num1, num2);
+// }
+
+// console.log(calculator(2, 3, mul));
+
+// const greet = (name) => {
+//     console.log(`Hello ${name}` );
+// }
+
+// const displayResult = (greet) => {
+//     name = "Ajit";
+//     greet(name);
+// }
+
+// displayResult(greet);
+
+function higherOrder(fn) {
+    return function() {
+      console.log("This is from higher-order function");
+    //   fn();
+    };
+  }
+  
+  function sayHello() {
+    console.log("Hello, World!");
+  }
+  
+  const resultFunction = higherOrder(sayHello);
+  resultFunction();
+
+
+
 
 
 

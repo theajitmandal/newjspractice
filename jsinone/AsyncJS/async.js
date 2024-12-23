@@ -70,4 +70,15 @@
 
         myCalculator(5, 5);
 
+        The problem with the first example above, is that you have to call two functions to display the result.
+        The problem with the second example, is that you cannot prevent the calculator function from displaying 
+        the result.
+        Now it is time to bring in a callback.
+
+    *** JavaScript Callbacks ***
+        A callback is a function passed as an argument to another function.
+
+
+
+
 */
