@@ -555,19 +555,80 @@
 
 // displayResult(greet);
 
-function higherOrder(fn) {
-    return function() {
-      console.log("This is from higher-order function");
-    //   fn();
-    };
-  }
+// function higherOrder(fn) {
+//     return function() {
+//       console.log("This is from higher-order function");
+//     //   fn();
+//     };
+//   }
   
-  function sayHello() {
-    console.log("Hello, World!");
-  }
+//   function sayHello() {
+//     console.log("Hello, World!");
+//   }
   
-  const resultFunction = higherOrder(sayHello);
-  resultFunction();
+//   const resultFunction = higherOrder(sayHello);
+//   resultFunction();
+
+// function display(value){
+//   console.log(value);  
+// };
+
+// function myCalculator(a, b) {
+//   c = a + b;
+//   return c;
+// }
+
+// let result = myCalculator(4, 6);
+// display(result);
+
+// function display(value){
+//   console.log(value);  
+// };
+
+// function myCalculator(a, b) {
+//   let c = a + b;
+//   display(c);
+// }
+
+// myCalculator(5, 11);
+
+// function display(value){
+//   console.log(value);  
+// }
+
+// function myCalculator(a, b, myCallback){
+//   let c = a + b;
+//   myCallback(c);
+// }
+
+// myCalculator(3, 6, display());
+
+// let a = "Hello";
+
+// const first = () => {
+//   let b = "How are you?"
+
+//   const second = () => {
+//     let c = "Hi, I am fine";
+//     console.log(a + b + c);
+//   }
+//   second();
+//   console.log(a+b+c);
+// }
+// first();
+
+const outerFunc = (a) => {
+  let b = 10;
+  const innerFunc = () => {
+    let sum = a + b;
+    console.log(`The sum of the two number is ${sum}`);
+  }
+  return innerFunc;
+  let checkClosure = outerFunc(5);
+  console.log(checkClosure);
+}
+
+
 
 
 

@@ -274,6 +274,7 @@
         So, your statement:
         "Whole function is HOF, and arguments are callbacks" is mostly correct, especially in practical JavaScript 
         scenarios.
+    
 
 
 
