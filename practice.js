@@ -616,6 +616,7 @@
 //   console.log(a+b+c);
 // }
 // first();
+// second();
 
 const outerFunc = (a) => {
   let b = 10;
