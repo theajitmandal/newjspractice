@@ -617,6 +617,7 @@
 // }
 // first();
 // second();
+// third();
 
 const outerFunc = (a) => {
   let b = 10;
