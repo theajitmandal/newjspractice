@@ -20,7 +20,7 @@
 // arr.forEach(function(element, index, array){
 //     console.log(element)
 //     console.log(index)
-//     console.log(array)   
+//     console.log(array)
 // }, this);
 
 // arr.forEach((e, i, a)=>
@@ -37,7 +37,6 @@
 // })
 // console.log(findElem);
 
-
 // const findElem = arr.find((elem) => elem<8);
 // console.log(findElem);
 
@@ -46,7 +45,7 @@
 
 // arr.forEach((e, i, a) => {
 //     // return e+=5;
-//     console.log(e+=5);    
+//     console.log(e+=5);
 // })
 
 // console.log(findElem);
@@ -61,12 +60,12 @@
 
 // arr.forEach((e, i, a) => {
 //     // return e+=5;
-//     console.log(e+=5);    
+//     console.log(e+=5);
 // })
 
 // const newElem = arr.forEach((e, i, a) => {
 //     return e+=6;
-//     // console.log(e+=5);    
+//     // console.log(e+=5);
 // })
 // console.log(newElem);
 
@@ -93,9 +92,9 @@
 // const newAnimals = animals.push('goat');
 // console.log(newAnimals);
 
-    // const myNumbers1 = [2, 4, 5, 8, 9];
-    // myNumbers1.unshift(3, 7);
-    // console.log(myNumbers1);
+// const myNumbers1 = [2, 4, 5, 8, 9];
+// myNumbers1.unshift(3, 7);
+// console.log(myNumbers1);
 
 // const newArr = [5, 10, 15, 20, 25, 30];
 // console.log(newArr.pop());
@@ -137,17 +136,17 @@
 // console.log(Object.values(otherUser)); //gives values of objects in an array
 // console.log(Object.entries(otherUser)); //gives whole array in key-value pairs.
 
-// const myName = "ajit" - "mandal"; 
+// const myName = "ajit" - "mandal";
 // const fullName = "ajit" + "mandal";
 // console.log(myName);
-// console.log(typeof(myName)); 
-// console.log(typeof(fullName)); 
-// console.log(isNaN(NaN)); 
-// console.log(NaN === NaN); 
-// console.log(NaN == NaN); 
-// console.log(Number.NaN); 
-// console.log(Number.NaN === NaN); 
-// console.log(Number.isNaN(NaN)); 
+// console.log(typeof(myName));
+// console.log(typeof(fullName));
+// console.log(isNaN(NaN));
+// console.log(NaN === NaN);
+// console.log(NaN == NaN);
+// console.log(Number.NaN);
+// console.log(Number.NaN === NaN);
+// console.log(Number.isNaN(NaN));
 // console.log(Number.isNaN(fullName));
 // console.log(isNaN(fullName));
 
@@ -163,7 +162,7 @@
 // console.log(isNan(myName)); //true
 
 //isNaN Usage:
-// var myPhoneNumber = "9804065452"; 
+// var myPhoneNumber = "9804065452";
 // if(isNaN(myPhoneNumber)){
 //     console.log("Please enter a valid phone number");
 // }
@@ -214,7 +213,7 @@
 //     console.log("T");
 // }
 
-// myName  // function reference -> Doesnot print or execute anything 
+// myName  // function reference -> Doesnot print or execute anything
 // myName() // function execution
 
 // function add(a, b){ //a & b are parameters
@@ -239,7 +238,6 @@
 // const prod = () => console.log(`The product is ${(a = 8) * (b = 8)}`);
 // prod();
 
-
 // if (true) {
 //     var userName = "Ajit";
 //     if (userName === "Ajit") {
@@ -250,7 +248,6 @@
 // }
 
 // console.log(userName);
-
 
 // function addOne (num) {
 //     return num + 1;
@@ -275,10 +272,9 @@
 
 // const coding = ["js", "python", "java", "cpp", "ruby"];
 
-
 // const values = coding.forEach((item) => {
-//     // console.log(item);   
-//     // return item;    
+//     // console.log(item);
+//     // return item;
 // })
 
 // console.log(values);
@@ -325,12 +321,12 @@
 // console.log(this);
 
 // function myName(){
-//     console.log(this);    
+//     console.log(this);
 // }
 // myName();
 
 // let myNames = "Ajit";
-// function myName(){    
+// function myName(){
 //     console.log(this.myNames);
 // }
 // myName();
@@ -338,8 +334,8 @@
 // const obj = {
 //     myAge : 26,
 //     myName(){
-//         console.log(this);        
-//         console.log(this.myAge);        
+//         console.log(this);
+//         console.log(this.myAge);
 //     }
 // }
 // obj.myName();
@@ -347,7 +343,7 @@
 // const obj = {
 //     myAge : 26,
 //     myName : () => {
-//         console.log(this);        
+//         console.log(this);
 //     }
 // }
 // obj.myName();
@@ -507,7 +503,6 @@
 // myNames.lName ??= 'Mandal';
 // console.log(myNames.lName);
 
-
 // function config(options) {
 //     options.duration ??= 100;
 //     options.speed ??= 25;
@@ -515,7 +510,7 @@
 //     return options;
 // }
 
-//     config({ duration: 125 }); 
+//     config({ duration: 125 });
 //     config({});
 //     console.log(config({}));
 
@@ -561,16 +556,16 @@
 //     //   fn();
 //     };
 //   }
-  
+
 //   function sayHello() {
 //     console.log("Hello, World!");
 //   }
-  
+
 //   const resultFunction = higherOrder(sayHello);
 //   resultFunction();
 
 // function display(value){
-//   console.log(value);  
+//   console.log(value);
 // };
 
 // function myCalculator(a, b) {
@@ -582,7 +577,7 @@
 // display(result);
 
 // function display(value){
-//   console.log(value);  
+//   console.log(value);
 // };
 
 // function myCalculator(a, b) {
@@ -593,7 +588,7 @@
 // myCalculator(5, 11);
 
 // function display(value){
-//   console.log(value);  
+//   console.log(value);
 // }
 
 // function myCalculator(a, b, myCallback){
@@ -619,62 +614,177 @@
 // second();
 // third();
 
-const outerFunc = (a) => {
-  let b = 10;
-  const innerFunc = () => {
-    let sum = a + b;
-    console.log(`The sum of the two number is ${sum}`);
-  }
-  return innerFunc;
-  let checkClosure = outerFunc(5);
-  console.log(checkClosure);
-}
+// const outerFunc = (a) => {
+//   let b = 10;
+//   const innerFunc = () => {
+//     let sum = a + b;
+//     console.log(`The sum of the two number is ${sum}`);
+//   }
+//   return innerFunc;
+//   let checkClosure = outerFunc(5);
+//   console.log(checkClosure);
+// }
 
+// const myDispayer = function(value){
+//   console.log(value);
+// }
 
+// const myCalculator = function(a, b){
+//   return a + b;
+// }
 
+// const result = myCalculator(5, 4);
+// myDispayer(result);
 
+// function myDispayer(value){
+//   console.log(value);
+// }
 
+// const myCalculator = function(a, b){
+//   let c = a + b;
+//   myDispayer(c);
+// }
 
+// myCalculator(2, 4);
 
+// function myDispayer(value){
+//   console.log(value);
+// }
 
+// function myCalculator(a, b, myCallback){
+//   let c = a + b;
+//   myCallback(c);
+// }
 
+// myCalculator(4, 6, myDispayer);
 
+// const promiseOne = new Promise(function(resolve, reject){
+//   // Do async task
+//   // DB calls, cryptography, network calls
+//   setTimeout(function(){
+//       console.log('Async task is complete');
+//       // resolve();
+//       // below code just for practice
+//       // console.log('Async tasks is complete');
+//   }, 2000)
+// });
 
+// promiseOne.then(function(){
+//   console.log("Promise Consumed");
+// })
 
+// new Promise(function(resolve, reject){
+//   setTimeout(function(){
+//     console.log("Async Task 2");
+//     resolve();
+//   }, 1000);
+// }).then(function(){
+//   console.log("Async 2 resolved");
+// })
 
-    
-    
+// const promiseThree = new Promise(function(resolve, reject) {
+//   setTimeout(function(){
+//     resolve({username: "Ajit", email: "ajit@example.com"})
+//   }, 1000)
+// })
 
+// promiseThree.then(function(user){
+//   console.log(user);
+// })
 
+// const promiseFour = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     let error = true;
+//     // let error = false;
+//     if (!error) {
+//       resolve({ username: "Ajit", password: "123" });
+//     } else {
+//       reject("ERROR: Something went wrong");
+//     }
+//   }, 1000);
+// });
 
+// promiseFour
+//   .then((user) => {
+//     console.log(user);
+//     return user.username;
+//   })
+//   .then((username) => {
+//     console.log(username);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   })
+//   .finally(() => console.log("Promise is either resolved or rejected"));
 
+// const promiseFive = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     let error = true;
+//     if (!error) {
+//       resolve({ username: "JS", password: "123" });
+//     } else {
+//       reject("ERROR: JS went wrong");
+//     }
+//   }, 1000);
+// });
 
+// async function consumePromiseFive() {
+//   try {
+//     const response = await promiseFive;
+//     console.log(response);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
+// consumePromiseFive();
 
+// lets practice more:
 
+// async function getAllUsers() {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     // here response.json() also takes time so use await here
+//     const data = await  response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("error");
+//   }
+// }
 
+// getAllUsers();
 
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response) => {
+//   return response.json();
+// })
+// .then((data) => {
+//   console.log(data);
+// })
+// .catch((error)=>{
+//   console.log(error);
+// })
 
+// const func2 = () => {
+//   console.log("Function 2 is called");
+// }
 
+// const func1 = () => {
+//   console.log("Function 1 is called");
+//   func2();
+//   console.log("Function 1 is called again");
+// }
 
+// func1();
 
+const func2 = () => {
+  setTimeout(() => console.log("Function 2 is called"), 1000);
+};
 
+const func1 = () => {
+  console.log("Function 1 is called");
+  func2();
+  console.log("Function 1 is called again");
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+func1();

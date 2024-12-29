@@ -72,17 +72,51 @@
         It is same like lexical scoping
 
         const outerFunc = (a) => {
-  let b = 10;
-  const innerFunc = () => {
-    let sum = a + b;
-    console.log(`The sum of the two number is ${sum}`);
-  }
-  return innerFunc;
-  let checkClosure = outerFunc(5);
-  console.log(checkClosure);
-}
+            let b = 10;
+            const innerFunc = () => {
+                let sum = a + b;
+                console.log(`The sum of the two number is ${sum}`);
+            }
+            return innerFunc;
+            let checkClosure = outerFunc(5);
+            console.log(checkClosure);
+        }
 
-InnerFunction can access data of outer
+        InnerFunction can access data of outerfunction because of closures. 
+        Datas are stored in closures and accessed from there.
 
     
+    Interview Question:
+        Differentiate between synchronous and asynchronous javascript?
+
+    Synchronous Javascript Program:
+        First work will complete then second and then the third one
+    
+    const func2 = () => {
+        console.log("Function 2 is called");
+    }
+
+    const func1 = () => {
+        console.log("Function 1 is called");
+        func2();
+        console.log("Function 1 is called again");  
+    }
+
+    func1();
+
+    Asynchronous Javascript Program:
+        All the works go one by one
+
+    const func2 = () => {
+        setTimeout(() => console.log("Function 2 is called"), 2000);
+    };
+
+    const func1 = () => {
+        console.log("Function 1 is called");
+        func2();                                    -> will be executed after 2 second
+        console.log("Function 1 is called again"); -> This will be called immediately doesnot wait for func2 to complete
+    };
+
+    func1();
+
 */
