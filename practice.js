@@ -777,14 +777,229 @@
 
 // func1();
 
-const func2 = () => {
-  setTimeout(() => console.log("Function 2 is called"), 1000);
-};
+// const func2 = () => {
+//   setTimeout(() => console.log("Function 2 is called"), 1000);
+// };
 
-const func1 = () => {
-  console.log("Function 1 is called");
-  func2();
-  console.log("Function 1 is called again");
-};
+// const func1 = () => {
+//   console.log("Function 1 is called");
+//   func2();
+//   console.log("Function 1 is called again");
+// };
 
-func1();
+// func1();
+
+// let a = sum(5)(3)(8);
+// console.log(a);
+
+// function sum(num1){
+//   console.log(num1);
+//   return function(num2){
+//     console.log(num1, num2);
+//     return function(num3){
+//       console.log(num1, num2, num3);      
+//       console.log(num1 + num2 + num3);      
+//     }    
+//   }  
+// }
+
+// sum(5)(3)(8);
+
+// const sum = (num1) => (num2) => (num3) => console.log(num1 + num2 + num3);
+// sum(2)(4)(8);
+
+// const user = {
+//     userName: "Ajit",
+//     logInCount: 5,
+//     signedIn: true,
+//     getUserDetails: function(){
+//         // console.log("Got User Details from Database");
+//         // console.log(`Username: ${this.userName}`);
+//         console.log(this);           
+//     }
+// }
+
+// // console.log(user.userName);
+// console.log(user.getUserDetails());
+// console.log(this);          
+// // Above line gives {} because in global execution context there is nothing right now
+// // But if console.log(this) is run in the browser console then it gives Global Execution Context, check yourself          
+
+
+// // If user2 should be made then it contains different values in such case we need to make constructor
+
+// const promiseOne = new Promise()
+// const date = new Date()
+
+// function User(username, logInCount, isLoggedIn){
+//     this.username = username;
+//     this.logInCount = logInCount;
+//     this.isLoggedIn = isLoggedIn;
+
+//     // return this
+// }
+
+// const userOne = new User("Ajit", 10, true);
+// const userTwo = new User("Mandal", 15, false);
+// // Here the value of userOne will be override by userTwo
+// console.log(userOne);
+// console.log(userTwo);
+
+// function User(username, logInCount, isLoggedIn){
+//     this.username = username;
+//     this.logInCount = logInCount;
+//     this.isLoggedIn = isLoggedIn;
+
+//     // methods can also be used here
+//     this.greeting = function(){
+//         console.log(`Welcome ${this.username}`);
+//     }
+
+//     // if return this is removed then also the value will be returned here
+//     return this
+// }
+
+// const userOne = new User("Ajit", 20, true);
+// console.log(userOne.constructor);
+
+// function multiplyBy5(num){
+//     return num*5;
+// }
+
+// multiplyBy5.power = 2;
+
+// console.log(multiplyBy5(5));
+// console.log(multiplyBy5.power);
+// console.log(multiplyBy5.prototype); /*gives {} which sets a context*/
+
+// function createUser(username, score){
+//     this.username = username;
+//     this.score = score;
+// }
+
+// createUser.prototype.increment = function(){
+//     // the one who calls
+//     this.score++;
+// }
+
+// createUser.prototype.printMe = function(){
+//     console.log(`score is ${this.score}`);    
+// }
+
+// // const ram = createUser("Ram", 20); -> This code doesnot work but below code works
+// const ram = new createUser("Ram", 20);
+// const shyam = new createUser("Shyam", 30);
+
+// ram.printMe();
+
+// /*
+
+// */
+
+
+
+// let myName = "Ajit     ";
+
+// // console.log(myName.length);
+// // console.log(myName.trim().length);
+// console.log(myName.truelength);
+// // lets make truelength method by default (or in the prototype list)
+
+// let myHeroes = ["thor", "spiderman", "shaktiman"];
+
+// let heroPower = {
+//     thor: "hammer",
+//     spiderman: "sling",
+
+//     getSpiderPower: function(){
+//         console.log(`Spidy power is ${this.spiderman}`);
+//     }
+// }
+
+// // inserting ajit method in the object so all objects, arrays can access it
+// Object.prototype.ajit = function(){
+//     console.log(`Ajit is present in all objects`);
+    
+// }
+
+// Array.prototype.heyAjit = function(){
+//     console.log(`Ajit says hello`);;
+// }
+
+// // heroPower.ajit()
+// myHeroes.ajit();
+
+// heroPower.heyAjit();        // This will not have access of heyAjit
+// myHeroes.heyAjit();         // This will have access of heyAjit
+
+// // Inheritance
+
+// const User = {
+//     name: "user",
+//     email: "ajit@google.ocm"
+// }
+
+// const Teacher = {
+//     makeVideo: true
+// }
+
+// const TeachingSupport = {
+//     isAvailable: false
+// }
+
+// const TASupport = {
+//     makeAssignment: 'JS Assignment',
+//     fullTime: true,
+//     __proto__: TeachingSupport // can access all the codes of TeachingSuppoort
+// }
+
+// Teacher.__proto__ = User;
+
+// // modern syntax
+// Object.setPrototypeOf(TeachingSupport, Teacher) //TeachingSupport access all properties of Teacher
+
+// let anotherUserName = "AJitMandal       ";
+
+// String.prototype.trueLength = function(){
+//     console.log(this);
+//     console.log(this.name);
+//     console.log(`True length is : ${this.trim().length}`);     
+// }
+
+// anotherUserName.trueLength();
+// "Ajit".trueLength();
+// "HelloSir".trueLength();
+
+
+function setUserName(username){
+    //complex DB calls
+    this.username = username
+    console.log("Called");
+    
+}
+
+function createUser(username, email, password){
+    setUserName(username)
+    // The above line calls the above function but doesnot hold its reference, and set the username here
+    // to solve the problem we do the following:
+    // setUserName.call(username);
+    //The above line also doesnot add username
+    setUserName.call(this, username);
+
+
+    this.email = email;
+    this.password = password;
+
+}
+
+const ajit = new createUser("ajit", "ajit@gmail.com", "123");
+console.log(ajit);
+
+
+
+
+
+
+
+
+
