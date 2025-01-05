@@ -969,6 +969,7 @@
 // anotherUserName.trueLength();
 // "Ajit".trueLength();
 // "HelloSir".trueLength();
+// "HelloSir".Length(); -> written just
 
 
 function setUserName(username){
