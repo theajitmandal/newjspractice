@@ -974,29 +974,39 @@
 // "HelloSir".Length(); -> written just
 
 
-function setUserName(username){
-    //complex DB calls
-    this.username = username
-    console.log("Called");
+// function setUserName(username){
+//     //complex DB calls
+//     this.username = username
+//     console.log("Called");
     
-}
+// }
 
-function createUser(username, email, password){
-    setUserName(username)
+// function createUser(username, email, password){
+//     setUserName(username)
     // The above line calls the above function but doesnot hold its reference, and set the username here
     // to solve the problem we do the following:
     // setUserName.call(username);
     //The above line also doesnot add username
-    setUserName.call(this, username);
+//     setUserName.call(this, username);
 
 
-    this.email = email;
-    this.password = password;
+//     this.email = email;
+//     this.password = password;
 
-}
+// }
 
-const ajit = new createUser("ajit", "ajit@gmail.com", "123");
-console.log(ajit);
+// const ajit = new createUser("ajit", "ajit@gmail.com", "123");
+// console.log(ajit);
+
+
+// console.log("5" + 2 + 3);
+// console.log(2 + 3 + "5");
+
+let x = 5;
+x = 7;
+x = x + x;
+console.log(x);
+
 
 
 

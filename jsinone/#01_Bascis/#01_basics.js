@@ -116,6 +116,11 @@
         To run JS 'index.js' file in VS code, type node index.js, for this node should be installed
         Comment Shortcut ~ Ctrl + ?
 
+    *** Exercises ***
+        1. What is a correct syntax for assigning a value to a variable? -> x = 5
+        2. Which one is NOT a legal variable name? -> -firstName
+        3. True or False: JavaScript variable names are case in-sensitive, meaning name is the same as NAME -> F
+
     *** What can JS do? ***
         1. JavaScript Can Change HTML Content
         
@@ -202,7 +207,14 @@
         JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
         ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
 
-    *** Where to inser JS codes ? ***
+    *** Exercise***
+
+        1. True or False: JAVA is short for JavaScript. -> False
+        2. Who invented JavaScript? -> Brendan Eich
+        3. Select the correct JavaScript method for finding the specified HTML element.
+            -> document.getElementById("demo").innerHTML
+
+    *** Where to insert JS codes ? ***
         
         The <script> Tag
             In HTML, JavaScript code is inserted between <script> and </script> tags.
@@ -327,6 +339,442 @@
             <script src="myScript.js"></script>
 
         We can read more about file paths in the chapter HTML File Paths.
+
+    *** Exercises ***
+        1. In HTML, JavaScripts must be inserted inside which HTML tags? -> <script> and </script> tag
+        2. What is the correct file extension for JavaScript files? -> .js
+        3. What is a correct syntax for including a JavaScript in an HTML document? 
+            -> <script src="index.js"></script>
+
+    *** JavaScript Output ***
+    
+        *** JavaScript Display Possibilities ***
+        
+            JavaScript can "display" data in different ways:
+
+                Writing into an HTML element, using innerHTML.
+                Writing into the HTML output using document.write().
+                Writing into an alert box, using window.alert().
+                Writing into the browser console, using console.log().
+
+        1. Using innerHTML:
+
+            To access an HTML element, JavaScript can use the document.getElementById(id) method.
+            The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+
+            Example:
+                <!DOCTYPE html>
+                <html>
+                <body>
+
+                <h2>My First Web Page</h2>
+                <p>My First Paragraph.</p>
+
+                <p id="demo"></p>
+
+                <script>
+                document.getElementById("demo").innerHTML = 5 + 6;
+                </>
+
+                </body>
+                </html> 
+
+            Changing the innerHTML property of an HTML element is a common way to display data in HTML.
+
+        2. Using document.write()
+            
+            For testing purposes, it is convenient to use document.write():
+                <!DOCTYPE html>
+                <html>
+                <body>
+
+                <h2>My First Web Page</h2>
+                <p>My first paragraph.</p>
+
+                <p>Never call document.write after the document has finished loading.
+                It will overwrite the whole document.</p>
+
+                <script>
+                document.write(5 + 6);
+                </script>
+
+                </body>
+                </html> 
+            
+            Note: Using document.write() after an HTML document is loaded, will delete all existing HTML:
+            Run and check up the below code:
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+                <body>
+                    <h1>Heading 1</h1>
+                    <p id="demo">Welcome</p>
+                    <h1>Heading 2</h1>
+                    <button onclick="display()">Clicke Here</button>
+
+                    <script>
+                        function display() {
+                            document.write("Start Again");
+                        }     
+                    </script>
+                </body>
+                </html>
+            
+            So, The document.write() method should only be used for testing.
+
+        3. Using window.alert()
+
+            You can use an alert box to display data:
+                <!DOCTYPE html>
+                <html>
+                <body>
+
+                <h2>My First Web Page</h2>
+                <p>My first paragraph.</p>
+
+                <script>
+                window.alert(5 + 6);
+                </script>
+
+                </body>
+                </html> 
+            
+            You can skip the window keyword.
+            In JavaScript, the window object is the global scope object. 
+            This means that variables, properties, and methods by default belong to the window object. 
+            This also means that specifying the window keyword is optional:
+
+            window.alert(5 + 6); can also be written as alert(5 + 6);
+
+        4. Using console.log()
+            
+            For debugging purposes, you can call the console.log() method in the browser to display data.
+                <!DOCTYPE html>
+                <html>
+                <body>
+
+                <h2>Activate Debugging</h2>
+
+                <p>F12 on your keyboard will activate debugging.</p>
+                <p>Then select "Console" in the debugger menu.</p>
+                <p>Then click Run again.</p>
+
+                <script>
+                console.log(5 + 6);
+                </script>
+
+                </body>
+                </html> 
+
+        5. JavaScript Print
+
+            JavaScript does not have any print object or print methods.
+            You cannot access output devices from JavaScript.
+            The only exception is that you can call the window.print() method in the browser to print the 
+            content of the current window.
+
+    *** Exercises ***
+        What is NOT a correct syntax for writing output in JavaScript? -> body.html()
+        True or False: alert(8); is the same as window.alert(8);.       -> true
+        Select the correct syntax for writing 'Hello': document.write("Hello")
+
+    *** JavaScript Statements ***
+        *** Statements ***
+            let x, y, z;    // Statement 1
+            x = 5;          // Statement 2
+            y = 6;          // Statement 3
+            z = x + y;      // Statement 4
+
+    *** JavaScript Programs ***
+        A computer program is a list of "instructions" to be "executed" by a computer.
+        In a programming language, these programming instructions are called statements.
+        A JavaScript program is a list of programming statements.
+        
+        In HTML, JavaScript programs are executed by the web browser.
+
+    *** JavaScript Statements ***
+        JavaScript statements are composed of:
+            Values, Operators, Expressions, Keywords, and Comments.
+            
+        This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+        Example:
+            document.getElementById("demo").innerHTML = "Hello Dolly.";
+
+        Most JavaScript programs contain many JavaScript statements.
+        The statements are executed, one by one, in the same order as they are written.
+        JavaScript programs (and JavaScript statements) are often called JavaScript code.
+
+    *** Semicolons ; ***
+        Semicolons separate JavaScript statements.
+        Add a semicolon at the end of each executable statement:
+
+        Examples:
+            let a, b, c;  // Declare 3 variables
+            a = 5;        // Assign the value 5 to a
+            b = 6;        // Assign the value 6 to b
+            c = a + b;    // Assign the sum of a and b to c
+
+        When separated by semicolons, multiple statements on one line are allowed:
+            a = 5; b = 6; c = a + b;
+        
+        On the web, you might see examples without semicolons.
+        Ending statements with semicolon is not required, but highly recommended.
+
+    *** JavaScript White Space ***
+        JavaScript ignores multiple spaces. 
+        You can add white space to your script to make it more readable.
+
+        The following lines are equivalent:
+            let person = "Hege";
+            let person="Hege";
+
+        A good practice is to put spaces around operators ( = + - * / ):
+            let x = y + z;
+
+    *** JavaScript Line Length and Line Breaks ***
+        For best readability, programmers often like to avoid code lines longer than 80 characters.
+        If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
+
+        Example:
+            document.getElementById("demo").innerHTML =
+            "Hello Dolly!";
+
+    *** JavaScript Code Blocks ***
+        JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+        The purpose of code blocks is to define statements to be executed together.
+        One place you will find statements grouped together in blocks, is in JavaScript functions:
+        
+        Example:
+            function myFunction() {
+                document.getElementById("demo1").innerHTML = "Hello Dolly!";
+                document.getElementById("demo2").innerHTML = "How are you?";
+            }
+
+        In this tutorial we use 2 spaces of indentation for code blocks.
+
+    *** JavaScript Keywords ***
+        JavaScript statements often start with a keyword to identify the JavaScript action to be performed.
+        Here is a list of some of the keywords you will learn about in this tutorial:
+
+        var	            Declares a variable
+        let	            Declares a block variable
+        const	        Declares a block constant
+        if	            Marks a block of statements to be executed on a condition
+        switch	        Marks a block of statements to be executed in different cases
+        for	            Marks a block of statements to be executed in a loop
+        function	    Declares a function
+        return	        Exits a function
+        try	            Implements error handling to a block of statements
+
+        JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.
+
+    *** Exercise ***
+        1. How many statements can you find in this line of code:
+            let a = 5; let b = 6; c = a + b;
+            -> 3
+        2. True or False: A semicolons is required after a statement in JavaScript. 
+            -> False, not necessary but recommended
+        3. How many statements are present inside the function block?
+            function genie() {
+                let a, b, c;
+                a = 5;
+                b = 9;
+                c = a + b;
+            }
+            -> 4
+
+    *** JavaScript Syntax ***
+            JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+            // How to create variables:
+                var x;
+                let y;
+
+            // How to use variables:
+                x = 5;
+                y = 6;
+                let z = x + y;
+
+    *** JavaScript Values ***
+        The JavaScript syntax defines two types of values:
+
+        Fixed values
+        Variable values
+        
+        Fixed values are called Literals.
+        Variable values are called Variables
+
+    *** JavaScript Literals ***
+        The two most important syntax rules for fixed values are:
+            1. Numbers are written with or without decimals: 
+                    10.50
+                    1001
+            2. Strings are text, written within double or single quotes:
+                    "John Doe"
+                    'John Doe'
+
+    *** JavaScript Variables ***
+        In a programming language, variables are used to store data values.
+        JavaScript uses the keywords var, let and const to declare variables.
+        An equal sign is used to assign values to variables.
+        In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+            let x;
+            x = 6;
+
+    *** JavaScript Operators ***
+        JavaScript uses arithmetic operators ( + - * / ) to compute values:
+            (5 + 6) * 10
+        JavaScript uses an assignment operator ( = ) to assign values to variables:
+            let x, y;
+            x = 5;
+            y = 6;
+
+    *** JavaScript Expressions ***
+        An expression is a combination of values, variables, and operators, which computes to a value.
+        The computation is called an evaluation.
+
+        For example, 5 * 10 evaluates to 50:
+            5 * 10
+        Expressions can also contain variable values:
+            x * 10
+        The values can be of various types, such as numbers and strings.
+
+        For example, 
+            "John" + " " + "Doe", evaluates to "John Doe":
+            "John" + " " + "Doe"
+
+    *** JavaScript Keywords ***
+        JavaScript keywords are used to identify actions to be performed.
+        The let keyword tells the browser to create variables:
+            let x, y;
+            x = 5 + 6;
+            y = x * 10;
+
+        The var keyword also tells the browser to create variables:
+            var x, y;
+            x = 5 + 6;
+            y = x * 10;
+
+        In these examples, using var or let will produce the same result.
+        We will learn more about var and let later in this tutorial.
+
+    *** JavaScript Comments ***
+        Not all JavaScript statements are "executed".
+        Code after double slashes // or between /* and */                  /* ( this comment is for commenting)
+        is treated as a comment.
+        Comments are ignored, and will not be executed:
+
+            let x = 5;   // I will be executed
+            // x = 6;   I will NOT be executed
+
+    *** JavaScript Identifiers / Names ***
+        Identifiers are JavaScript names.
+        Identifiers are used to name variables and keywords, and functions.
+        The rules for legal names are the same in most programming languages.
+
+        A JavaScript name must begin with:
+            A letter (A-Z or a-z)
+            A dollar sign ($)
+            Or an underscore (_)
+            Subsequent characters may be letters, digits, underscores, or dollar signs.
+
+        Note : Numbers are not allowed as the first character in names. 
+                This way JavaScript can easily distinguish identifiers from numbers.
+
+    *** JavaScript is Case Sensitive ***
+        All JavaScript identifiers are case sensitive. 
+        The variables lastName and lastname, are two different variables:
+            
+            let lastname, lastName;
+            lastName = "Doe";
+            lastname = "Peterson";
+
+        JavaScript does not interpret LET or Let as the keyword let.
+
+    *** JavaScript and Camel Case ***
+        Historically, programmers have used different ways of joining multiple words into one variable name:
+
+        Hyphens: first-name, last-name, master-card, inter-city.
+            Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+        
+        
+        Underscore: first_name, last_name, master_card, inter_city.
+        Upper Camel Case (Pascal Case): FirstName, LastName, MasterCard, InterCity.
+        Lower Camel Case: JavaScript programmers tend to use camel case that starts with a lowercase letter:
+                        firstName, lastName, masterCard, interCity.
+
+    *** JavaScript Character Set ***
+        JavaScript uses the Unicode character set.
+        Unicode covers (almost) all the characters, punctuations, and symbols in the world.
+
+    *** JavaScript Comments ***
+        JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+        JavaScript comments can also be used to prevent execution, when testing alternative code.
+
+        Single Line Comments
+        Multi-line Comments or Block comments
+
+        It is most common to use single line comments.
+        Block comments are often used for formal documentation.
+
+    *** Using Comments to Prevent Execution ***
+        Using comments to prevent execution of code is suitable for code testing.
+        Adding // in front of a code line changes the code lines from an executable line to a comment.
+
+    *** Exercises ***
+        1. What is a correct syntax for creating a comment in JavaScript?
+            -> // This is a comment
+        2. Select the correct syntax for commenting out the entire section of the code.   
+        3. What will be the value of x?            -> 5
+                    x = 5
+                    // x = 7
+
+
+
+
+
+
+    
+
+
+
+
+            
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
