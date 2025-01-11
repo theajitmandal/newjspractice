@@ -1,6 +1,10 @@
 /*
     *** JavaScript Variables ***
     Variables are Containers for Storing Data
+
+                var myName = "Ajit";
+
+    Here, var is a variable(Key), myName is a variable name and Ajit is a value
     
     JavaScript Variables can be declared in 4 ways:
         Automatically
@@ -84,8 +88,15 @@
             Names are case sensitive (y and Y are different variables).
             Reserved words (like JavaScript keywords) cannot be used as names.
             - cannot be used because - is reserved for subtraction.
+            No limit to the length of the variable name.
 
     Note: JavaScript identifiers are case-sensitive.
+
+    *** Challenge Time ***
+        var __myName = "Ajit";          ~ Valid
+        var _1my__Name = "Mandal";      ~ Valid
+        var 1myName = "Mandal";         ~ Not Valid
+        var $myName = "Ajit Mandal";    ~ Valid
 
     *** The Assignment Operator ***
         In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
@@ -250,8 +261,6 @@
         8. On one single line, declare three variables named fname, lname, and age, with the values John, Doe, and 46.
             ->
                 let fname = 'John', lname = 'Doe, age = 46;
-
-    Let
 
 
 

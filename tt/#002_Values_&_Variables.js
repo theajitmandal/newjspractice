@@ -19,4 +19,5 @@
 // var 1myName = "Mandal";         ~ Not Valid
 // var $myName = "Ajit Mandal";    ~ Valid
 
-// Note : Special Characters cannot be used after variable name. Example: _myName$ = "Ajit"; is not valid variable name
+// Note : Special Characters cannot be used after variable name. 
+// Example: _myName$ = "Ajit"; is not valid variable name

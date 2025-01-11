@@ -1002,10 +1002,23 @@
 // console.log("5" + 2 + 3);
 // console.log(2 + 3 + "5");
 
+// let x = 5;
+// x = 7;
+// x = x + x;
+// console.log(x);
+
+// let _myName$ = "Ajit";
+// console.log(_myName$);
+
+// _myName$ = "Ajit"
+// console.log(_myName$);
+
 let x = 5;
-x = 7;
-x = x + x;
+x+=10;
 console.log(x);
+
+
+
 
 
 
