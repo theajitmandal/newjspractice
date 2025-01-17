@@ -159,7 +159,15 @@
 
     Note: The ??= operator is an ES2020 feature.
 
-    Exercises: 
+    *** Exercises  ***
+    1. Consider the following code:
+            let x = 5;
+            x += 10;
+        What will be the result of x?               -> 15
+    2. Use the correct assignment operator that will result in x being 15 (same as x = x + y) if x = 10 & y = 5.  
+        -> x += y;
+    3. Use the correct assignment operator that will result in x being 50 (same as x = x * y) if x = 10 & y = 5.
+        -> x *= y
 
 
 
