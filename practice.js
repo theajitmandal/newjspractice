@@ -1013,13 +1013,49 @@
 // _myName$ = "Ajit"
 // console.log(_myName$);
 
-let x = 5;
-x+=10;
-console.log(x);
-console.log(y);
-console.log(z);
-console.log(p);
-console.log(r);
+// let x = 5;
+// x+=10;
+// console.log(x);
+// console.log(y);
+// console.log(z);
+// console.log(p);
+// console.log(r);
+
+// const string = "Hello";
+// const number = 10;
+// const bigInt = BigInt(25490);
+// const isNull = null;
+// const isMale = true;
+// let helloUser;
+// const arr = [2,4,5];
+// const obj = {firstName:'Ajit', secondName:'Mandal'};
+
+// console.log(typeof(string));
+// console.log(typeof(number));
+// console.log(typeof(bigInt));
+// console.log(typeof(isNull));
+// console.log(typeof(isMale));
+// console.log(typeof(helloUser));
+// console.log(typeof(arr));
+// console.log(typeof(obj));
+
+// const fullName = "ajit" + "mandal";
+
+// console.log(Number.true);
+// console.log(Number.false);
+
+              
+// console.log(isNaN(10));                 
+// console.log(Number.isNaN(10));                 
+
+// console.log(isNaN(NaN));                 
+// console.log(Number.isNaN(NaN)); 
+
+const myName = "Ajit" - "Mandal";
+console.log(myName);
+console.log(typeof(myName));
+
+
 
 
 
