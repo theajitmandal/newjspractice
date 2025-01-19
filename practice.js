@@ -1094,17 +1094,29 @@
 // console.log(Number.isNaN(NaN)); 
 
 
-const person = {
-    firstName: 'Ajit',
-    age: 28
-}
+// const person = {
+//     firstName: 'Ajit',
+//     age: 28
+// }
 
-const x = person;
-x.age = 25;
+// const x = person;
+// x.age = 25;
+
+// console.log(person);
+// console.log("Hello");
+// console.log(x);
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+};
 
 console.log(person);
-console.log("Hello");
-console.log(x);
+delete person.age;
+console.log(person);
+
 
 
 

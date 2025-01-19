@@ -263,5 +263,122 @@
 
         -> alert(person.name + ' is ' + person.age);
 
+    *** JavaScript Object Properties ***
+        An Object is an Unordered Collection of Properties.
+        Properties are the most important part of JavaScript objects.
+        Properties can be changed, added, deleted, and some are read only.
+
+    *** Accessing JavaScript Properties ***
+        The syntax for accessing the property of an object is:
+
+        // objectName.property
+        let age = person.age;
+            or
+
+        //objectName["property"]
+        let age = person["age"];
+            or
+
+        //objectName[expression]
+        let age = person[x];
+
+        Examples:
+            person.firstname + " is " + person.age + " years old.";
+
+            person["firstname"] + " is " + person["age"] + " years old.";
+
+            let x = "firstname";
+            let y = "age";
+            person[x] + " is " + person[y] + " years old.";
+
+    *** Adding New Properties ***
+        You can add new properties to an existing object by simply giving it a value:
+
+        Example:
+            person.nationality = "English";
+
+    *** Deleting Properties ***
+        The delete keyword deletes a property from an object:
+
+        Example:
+            const person = {
+                firstName: "John",
+                lastName: "Doe",
+                age: 50,
+                eyeColor: "blue"
+            };
+
+            delete person.age;
+
+        OR, delete person["age"];
+
+        Example
+            const person = {
+                firstName: "John",
+                lastName: "Doe",
+                age: 50,
+                eyeColor: "blue"
+            };
+
+            delete person["age"];
+
+    Note:   The delete keyword deletes both the value of the property and the property itself.
+            After deletion, the property cannot be used before it is added back again.
+
+    *** Nested Objects ***
+        Property values in an object can be other objects:
+
+        Example:
+            myObj = {
+                name:"John",
+                age:30,
+                myCars: {
+                    car1:"Ford",
+                    car2:"BMW",
+                    car3:"Fiat"
+                }
+            }
+        You can access nested objects using the dot notation or the bracket notation:
+
+        Examples:
+            myObj.myCars.car2;
+
+            myObj.myCars["car2"];
+
+            myObj["myCars"]["car2"];
+
+            let p1 = "myCars";
+            let p2 = "car2";
+            myObj[p1][p2];
+
+    *** Complete Object Reference ***
+        For a complete reference, go to our:
+
+            Complete JavaScript Object Reference.
+
+        The reference contains descriptions and examples of all Object Properties and Methods.
+
+    *** Exercises ***
+
+        1. Consider the following object:
+            const car = {
+                brand : 'Volvo',
+                model : 'EX90'
+            };
+            What is NOT a correct syntax to alert 'Volvo'?
+                alert(car[brand])
+                alert(car.brand)
+                alert(car['brand'])
+            
+                -> alert(car[brand])
+        2. True or False: You are allowed to insert new properties to existing objects.     -> True
+        3. What is a correct syntax to delete the property model from an object named car?
+                del car.model
+                del model from car
+                delete car.model
+                car.model = NULL
+
+                -> delete car.model
+
 
 */
