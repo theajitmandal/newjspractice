@@ -270,6 +270,15 @@
 
     typeof both array and object is object
 
+    // Symbols
+        const sym1 = Symbol();
+        const sym2 = Symbol("foo");
+        const sym3 = Symbol("foo");
+
+        console.log(typeof(sym1));                              -> symbol
+        console.log(typeof(sym2));                              -> symbol
+        console.log(typeof(sym3));                              -> symbol
+
     *** What is NaN? ***
         If 2 strings are subtracted result is NaN
         Nan ~ Not a number, Nan is a property of the global object
@@ -354,6 +363,7 @@
             isNaN({}); // true
 
             isNaN(true); // false
+            isNaN(false); // false
             isNaN(null); // false
             isNaN(37); // false
 
@@ -362,6 +372,7 @@
                 isNaN("37.37"); // false: "37.37" is converted to the number 37.37 which is not NaN
                 isNaN("37,5"); // true
                 isNaN("123ABC"); // true: Number("123ABC") is NaN
+
                 isNaN(""); // false: the empty string is converted to 0 which is not NaN
                 isNaN(" "); // false: a string with spaces is converted to 0 which is not NaN
 
@@ -379,14 +390,14 @@
             isNaN([]); // empty array -> false
 
             More Examples:
-                isNaN(123);
-                isNaN(-1.23);
-                isNaN(5-2);
-                isNaN(0);
+                console.log(isNaN(123));                            -> false
+                console.log(isNaN(-1.23));                          -> false
+                console.log(isNaN(5-2));                            -> false
+                console.log(isNaN(0));                              -> false
 
-                isNaN('123');
-                isNaN('Hello');
-                isNaN('2005/12/12');
+                console.log(isNaN('123'));                          -> false
+                console.log(isNaN('Hello'));                        -> true
+                console.log(isNaN('2005/12/12'));                   -> true
 
     *** Difference Between isnan() and Number.isnan() ***
         isNaN() method returns true if a value is Not-a-Number.
@@ -418,6 +429,15 @@
                 document.getElementById("demo").innerHTML = Number.isNaN(text);
             </script>
 
+        console.log(Number.isNaN("Hello"));                         -> false
+        console.log(Number.isNaN(5));                               -> false
+        console.log(Number.isNaN(5-2));                             -> false
+        console.log(Number.isNaN("5a"));                            -> false
+
+        console.log(isNaN("Hello"));                                -> true
+        console.log(isNaN(5));                                      -> false
+        console.log(isNaN("5a"));                                   -> true
+
         // Discussed in details about NaN at the bottom
         // Run and Check Yourself
             const myName = "ajit" - "mandal"; 
@@ -448,11 +468,11 @@
             console.log(Number.false);                              -> undefined
 
 
-            console.log(isNaN(10));                 
-            console.log(Number.isNaN(10));                 
+            console.log(isNaN(10));                                 -> false
+            console.log(Number.isNaN(10));                          -> false
 
-            console.log(isNaN(NaN));                 
-            console.log(Number.isNaN(NaN)); 
+            console.log(isNaN(NaN));                                -> true
+            console.log(Number.isNaN(NaN));                         -> true
 
         // Some Important Notes:
             isNaN(Nan) -> true

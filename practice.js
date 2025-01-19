@@ -1051,9 +1051,66 @@
 // console.log(isNaN(NaN));                 
 // console.log(Number.isNaN(NaN)); 
 
-const myName = "Ajit" - "Mandal";
-console.log(myName);
-console.log(typeof(myName));
+// const myName = "Ajit" - "Mandal";
+// console.log(myName);
+// console.log(typeof(myName));
+
+// const sym1 = Symbol();
+// const sym2 = Symbol("foo");
+// const sym3 = Symbol("foo");
+
+// console.log(typeof(sym1));
+// console.log(typeof(sym2));
+// console.log(typeof(sym3));
+
+// console.log(isNaN(true));
+// console.log(isNaN(false));
+
+// console.log(isNaN(123));
+// console.log(isNaN(-1.23));
+// console.log(isNaN(5-2));
+// console.log(isNaN(0));
+
+// console.log(isNaN('123'));
+// console.log(isNaN('Hello'));
+// console.log(isNaN('2005/12/12'));
+
+// console.log(Number.isNaN("Hello"));
+// console.log(Number.isNaN(5));
+// console.log(Number.isNaN(5-2));
+// console.log(Number.isNaN("5a"));
+
+// console.log("Hello");
+
+// console.log(isNaN("Hello"));
+// console.log(isNaN(5));
+// console.log(isNaN("5a"));
+
+
+// console.log(isNaN(10));                 
+// console.log(Number.isNaN(10));                 
+
+// console.log(isNaN(NaN));                 
+// console.log(Number.isNaN(NaN)); 
+
+
+const person = {
+    firstName: 'Ajit',
+    age: 28
+}
+
+const x = person;
+x.age = 25;
+
+console.log(person);
+console.log("Hello");
+console.log(x);
+
+
+
+
+
+
 
 
 
