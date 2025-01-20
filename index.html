@@ -9,10 +9,19 @@
     <p id="demo">Welcome</p>
 
     <script>
-        let car = "volvo";
-        function display() {
-            document.getElementById('demo').innerHTML = car;
-        }     
+        const bike = {
+            bikeName: "pulsar",
+            bikeColor: "black",
+            bikePrice: 20000
+        }
+        
+        let text = "";
+        for(let [property, value] of Object.entries(bike)){
+            text += property + ": " + value + "<br/>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+   
     </script>
 </body>
 </html>

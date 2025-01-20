@@ -122,11 +122,15 @@
 
         objectName.propertyName
         objectName["propertyName"]
+                    objectName[expression]        -> Can be only Used in loops, while dealing with expressions
+                                                        It is discussed below:
+
+        let age = person[x];
 
         Examples:
             person.lastName;
             person["lastName"];
-
+                    
     *** JavaScript Object Methods ***
         Methods are actions that can be performed on objects.
         Methods are function definitions stored as property values.
@@ -379,6 +383,305 @@
                 car.model = NULL
 
                 -> delete car.model
+
+    *** JavaScript Object Methods ***
+        Object methods are actions that can be performed on objects.
+        A method is a function definition stored as a property value.
+
+            Property	        Value
+        firstName	               John
+        lastName	               Doe
+        age	                       50
+        eyeColor	               blue
+        fullName	               function() {return this.firstName + " " + this.lastName;}
+
+    Example:
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        In the example above, this refers to the person object:
+        this.firstName means the firstName property of person.
+        this.lastName means the lastName property of person.
+
+    *** Accessing Object Methods ***
+        You access an object method with the following syntax:
+
+        objectName.methodName()
+        
+        If you invoke the fullName property with (), it will execute as a function:
+
+        Example:
+            name = person.fullName();           -> John Doe
+
+        If you access the fullName property without (), it will return the function definition:
+
+        Example:
+            name = person.fullName;             -> function() { return this.firstName + " " + this.lastName; }
+
+    *** Adding a Method to an Object ***
+        Adding a new method to an object is easy:
+
+        Example:
+            person.name = function () {
+                return this.firstName + " " + this.lastName;
+            };
+
+    *** Using JavaScript Methods ***
+        This example uses the JavaScript toUpperCase() method to convert a text to uppercase:
+
+        Example:
+            person.name = function () {
+                return (this.firstName + " " + this.lastName).toUpperCase();
+            };
+
+    *** Complete Object Reference ***
+        For a complete reference, go to our:
+            Complete JavaScript Object Reference.
+        The reference contains descriptions and examples of all Object Properties and Methods.
+
+    *** Exercises ***
+        1. Consider the following object:
+            const person = {
+                    firstname: 'Jane',
+                    lastname: 'Doe',
+                    fullname: function() {
+                    return this.firstname + ' ' + this.lastname;
+                }
+            };
+            How many methods do the object have?                            -> 1
+        2. Consider the following object:
+            const person = {
+                firstname: 'Jane',
+                lastname: 'Doe',
+                fullname: function() {
+                return this.firstname + ' ' + this.lastname;
+                }
+            };
+            Insert the missing parts to alert 'Jane Doe'.                   
+                ~ alert( ____    _____   ____   ____  );                    -> alert(person.fullname())
+        3. True or False:You are allowed to insert new methods to existing objects.     -> True
+
+    *** JavaScript Display Objects ~ VVI ***
+        
+    *** How to Display JavaScript Objects? ***
+        Displaying a JavaScript object will output [object Object].
+
+        Example:
+            <!DOCTYPE html>
+            <html>
+            <body>
+            <h1>JavaScript Objects</h1>
+            <p>Displaying a JavaScript object will output [object Object]:</p>
+
+            <p id="demo"></p>
+
+            <script>
+                This is comment: Create an Object
+                const person = {
+                    name: "John",
+                    age: 30,
+                    city: "New York"
+                };
+
+                This is comment:  Display Object
+                document.getElementById("demo").innerHTML = person;                 -> [object Object]
+            </script>
+
+            </body>
+            </html>
+
+    Some solutions to display JavaScript objects are:
+
+        1. Displaying the Object Properties by name
+        2. Displaying the Object Properties in a Loop
+        3. Displaying the Object using Object.values()
+        4. Displaying the Object using Object.entries()
+        5. Displaying the Object using JSON.stringify()
+
+    *** Displaying Object Properties ***
+        1. The properties of an object can be displayed as a string:
+
+        Example
+                This is a comment: Create an Object
+            const person = {
+                name: "John",
+                age: 30,
+                city: "New York"
+            };
+
+                This is a comment: Display Properties
+            document.getElementById("demo").innerHTML =
+            person.name + "," + person.age + "," + person.city;             -> John 30 New York
+
+        2. Displaying Properties in a Loop
+            The properties of an object can be collected in a loop:
+
+            Example:
+                <!DOCTYPE html>
+                <html>
+                <body>
+                <h1>JavaScript Objects</h1>
+                <h2>Display Properties</h2>
+
+                <p id="demo"></p>
+
+                <script>
+                        This is a comment: Create an Object
+                    const person = {
+                        name: "John",
+                        age: 30,
+                        city: "New York"
+                    };
+
+                        This is a comment: Build a Text
+                    let text = "";
+                    for (let x in person) {
+                        This is a comment: Here, x means the property names like name, age, city
+                        text += person[x] + " ";
+                    };
+
+                        This is a comment: Display the Text
+                    document.getElementById("demo").innerHTML = text;           -> John 30 New York
+                </script>
+
+                </body>
+                </html>
+        Note: You must use person[x] in the loop.
+            person.x will not work (Because x is the loop variable).
+
+        3. Using Object.values()
+            Object.values() creates an array from the property values: 
+            This is also a method of converting object values into arrays.
+
+            // Create an Object
+            const person = {
+                name: "John",
+                age: 30,
+                city: "New York"
+            };
+
+            // Create an Array
+            const myArray = Object.values(person);
+
+            // Display the Array
+            document.getElementById("demo").innerHTML = myArray;                -> John,30,New York
+
+        4. Using Object.entries()
+            First lets learn what Object.entries() gives
+                const person = {
+                    firstName: "John",
+                    lastName: "Doe",
+                    age: 50,
+                    eyeColor: "blue"
+                };
+                console.log(Object.entries(person));
+
+                The above code gives:
+                [
+                    [ 'firstName', 'John' ],
+                    [ 'lastName', 'Doe' ],
+                    [ 'age', 50 ],
+                    [ 'eyeColor', 'blue' ]
+                ]
+            Object.entries() converts objects into array of arrays as ['objectProperty', 'value'].
+
+            Object.entries() makes it simple to use objects in loops:
+
+            <!DOCTYPE html>
+            <html>
+            <body>
+            <h1>JavaScript Objects</h1>
+            <h2>The Object.entries() Method</h2>
+            <p>Object.entries() makes it simple to use objects in loops:</p>
+
+            <p id="demo"></p>
+
+            <script>
+                const fruits = {Bananas:300, Oranges:200, Apples:500}; 
+
+                let text = "";
+                for (let [fruit, amount] of Object.entries(fruits)) {
+                    text += fruit + ": " + amount + "<br>";
+                }
+
+                document.getElementById("demo").innerHTML = text;
+            </script>
+
+            </body>
+            </html>
+
+        5. Using JSON.stringify()
+            JavaScript objects can be converted to a string with JSON method JSON.stringify().
+            JSON.stringify() is included in JavaScript and supported in all major browsers.
+
+            Note: The result will be a string written in JSON notation:
+
+                {"name":"John","age":50,"city":"New York"}
+
+            <!DOCTYPE html>
+            <html>
+            <body>
+            <h1>JavaScript Objects</h1>
+            <h2>Display Properties with JSON</h2>
+
+            <p id="demo"></p>
+
+            <script>
+                // Create an Object
+                const person = {
+                    name: "John",
+                    age: 30,
+                    city: "New York"
+                };
+
+                // Display JSON
+                document.getElementById("demo").innerHTML = JSON.stringify(person); 
+            </script>
+
+            </body>
+            </html>
+
+            The output of above code will be: -> 
+                {"name":"John","age":30,"city":"New York"}
+
+    *** Exercises ***
+        1. Only one of the following methods are a built-in JavaScript Object method, which one?
+                return()
+                all()
+                entries()
+                methods()
+            -> entries()
+
+        2. What method can be used to convert JavaScript Objects into JSON strings?
+
+                JSON.toString()
+                JSON.stringify()
+                JSON.string()
+
+            -> JSON.stringify()
+
+        3. When using Object.values() on a JavaScript Object, what will be the data type of the returned result?
+                Array
+                String
+                JSON
+                Object
+            -> Array
+
+
+
+
+            
+
+
+
+
+
 
 
 */

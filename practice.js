@@ -1106,6 +1106,17 @@
 // console.log("Hello");
 // console.log(x);
 
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 50,
+//     eyeColor: "blue"
+// };
+
+// console.log(person);
+// delete person.age;
+// console.log(person);
+
 const person = {
     firstName: "John",
     lastName: "Doe",
@@ -1113,9 +1124,13 @@ const person = {
     eyeColor: "blue"
 };
 
-console.log(person);
-delete person.age;
-console.log(person);
+console.log(Object.entries(person));
+
+
+
+
+
+
 
 
 
