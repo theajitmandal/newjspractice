@@ -1126,6 +1126,7 @@ const person = {
 
 console.log(Object.entries(person));
 console.log(Object.from(person));
+console.log(Object.from(person));
 
 
 
