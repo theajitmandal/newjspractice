@@ -1117,16 +1117,30 @@
 // delete person.age;
 // console.log(person);
 
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 50,
-    eyeColor: "blue"
-};
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 50,
+//     eyeColor: "blue"
+// };
 
-console.log(Object.entries(person));
-console.log(Object.from(person));
-console.log(Object.from(person));
+// console.log(Object.entries(person));
+// console.log(Object.from(person));
+// console.log(Object.from(person));
+
+let string = "Mandal";
+console.log(string.charAt(2));
+console.log(string.charCodeAt(2));
+
+console.log(string.at(3));
+console.log(string[4]);
+
+console.log(string.at(8));
+console.log(string.charAt(8));
+console.log(string[8]);
+
+
+
 
 
 

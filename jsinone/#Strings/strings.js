@@ -162,4 +162,142 @@
             Complete JavaScript String Reference.
 
         The reference contains descriptions and examples of all string properties and methods.
+
+    *** Exercise ***
+        1. Which one of the following is not a legal JavaScript String?
+                "Hello world!"
+                ""Hello world!""
+                'Hello world!'
+                `Hello world!`
+
+                    -> ""Hello world!""
+
+        2. Use the length property to alert the length of txt.
+                let txt = "Hello World!";
+                let x = _______;
+                alert(x);
+
+                    -> txt.length
+
+        3. Use escape characters to alert We are "Vikings".
+        
+                let txt = "_______";
+                alert(txt);
+
+                Use escape characters to alert We are "Vikings".
+
+                let txt = "We are \"Vikings\"";
+                alert(txt);
+
+        Concatenate the two strings to alert "Hello World!".
+
+                let str1 = "Hello ";
+                let str2 = "World!";
+                alert(_____________);
+
+                    -> alert(str1 + str2);
+
+    *** JavaScript String Methods ***
+    Javascript strings are primitive and immutable: All string methods produce a new string without altering the original string.
+
+    
+    String length                                   String toUpperCase()
+    String charAt()                                 String toLowerCase()
+    String charCodeAt()                             String concat()
+    String at()                                     String trim()
+    String [ ]                                      String trimStart()
+    String slice()                                  String trimEnd()
+    String substring()                              String padStart()
+    String substr()                                 String padEnd()
+                                                    String repeat()  
+                                                    String replace()   
+                                                    String replaceAll()
+                                                    String split()
+
+    See Also:
+        String Search Methods
+        String Templates
+
+    *** JavaScript String Length ***
+        The length property returns the length of a string:
+
+        Example:
+            let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let length = text.length;
+
+    *** Extracting String Characters ***
+            There are 4 methods for extracting string characters:
+
+            The at(position) Method
+            The charAt(position) Method
+            The charCodeAt(position) Method
+            Using property access [] like in arrays
+
+    *** JavaScript String charAt() ***
+            The charAt() method returns the character at a specified index (position) in a string:
+
+            Example:
+                let text = "HELLO WORLD";
+                let char = text.charAt(0);
+
+    *** JavaScript String charCodeAt() ***
+        The charCodeAt() method returns the code of the character at a specified index in a string:
+        The method returns a UTF-16 code (an integer between 0 and 65535).
+
+            Example:
+                let text = "HELLO WORLD";
+                let char = text.charCodeAt(0);
+
+    *** JavaScript String at() ***
+        ES2022 introduced the string method at():
+
+        Examples:
+            Get the third letter of name:
+                const name = "W3Schools";
+                let letter = name.at(2);
+
+            Get the third letter of name:
+
+                const name = "W3Schools";
+                let letter = name[2];
+
+        The at() method returns the character at a specified index (position) in a string.
+        The at() method is supported in all modern browsers since March 2022:
+
+    Note: 
+        The at() method is a new addition to JavaScript.
+        It allows the use of negative indexes while charAt() do not.
+
+        Now you can use myString.at(-2) instead of charAt(myString.length-2).
+
+    *** Browser Support ***
+        at() is an ES2022 feature.
+        JavaScript 2022 (ES2022) is supported in all modern browsers since March 2023:
+
+    *** Property Access [ ] ***
+        Example:
+            let text = "HELLO WORLD";
+            let char = text[0];
+
+        Note:
+            Property access might be a little unpredictable:
+
+            It makes strings look like arrays (but they are not)
+            If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+            It is read only. str[0] = "A" gives no error (but does not work!)
+
+        Example:
+            let string = "Mandal";
+            console.log(string.charAt(2));
+            console.log(string.charCodeAt(2));
+            console.log(string.at(3));
+            console.log(string[4]);
+
+            console.log(string.at(8));                  -> undefined
+            console.log(string.charAt(8));              -> empty string
+            console.log(string[8]);                     -> undefined
+
+
+
+
 */
