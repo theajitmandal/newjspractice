@@ -296,8 +296,4 @@
             console.log(string.at(8));                  -> undefined
             console.log(string.charAt(8));              -> empty string
             console.log(string[8]);                     -> undefined
-
-
-
-
 */
