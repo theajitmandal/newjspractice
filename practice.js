@@ -1140,6 +1140,7 @@ console.log(string.charAt(8));
 console.log(string[8]);
 
 console.log(string[8]);
+console.log(string[9]);
 
 
 
