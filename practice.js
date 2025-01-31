@@ -1142,6 +1142,10 @@ console.log(string[8]);
 console.log(string[8]);
 console.log(string[9]);
 console.log(string[10]);
+console.log(string[10]);
+console.log(string[11]);
+
+
 
 
 
