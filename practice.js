@@ -1129,6 +1129,7 @@
 // console.log(Object.from(person));
 
 let string = "Mandal";
+let string2 = "Man";
 console.log(string.charAt(2));
 console.log(string.charCodeAt(2));
 
