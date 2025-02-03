@@ -1148,6 +1148,8 @@ console.log(string[11]);
 console.log(string[11]);
 console.log(string[9]);
 
+console.log(string[-6]);
+
 
 
 
