@@ -1151,6 +1151,8 @@ console.log(string[9]);
 console.log(string[-6]);
 console.log(string[-9]);
 
+console.log(string[-11]);
+
 
 
 
