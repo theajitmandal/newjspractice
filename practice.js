@@ -1128,36 +1128,43 @@
 // console.log(Object.from(person));
 // console.log(Object.from(person));
 
-let string = "Mandal";
-let string2 = "Man";
-console.log(string.charAt(2));
-console.log(string.charCodeAt(2));
+// let string = "Mandal";
+// let string2 = "Man";
+// console.log(string.charAt(2));
+// console.log(string.charCodeAt(2));
 
-console.log(string.at(3));
-console.log(string[4]);
+// console.log(string.at(3));
+// console.log(string[4]);
 
-console.log(string.at(8));
-console.log(string.charAt(8));
-console.log(string[8]);
+// console.log(string.at(8));
+// console.log(string.charAt(8));
+// console.log(string[8]);
 
-console.log(string[8]);
-console.log(string[9]);
-console.log(string[10]);
-console.log(string[10]);
-console.log(string[11]);
-console.log(string[11]);
-console.log(string[9]);
+// console.log(string[8]);
+// console.log(string[9]);
+// console.log(string[10]);
+// console.log(string[10]);
+// console.log(string[11]);
+// console.log(string[11]);
+// console.log(string[9]);
 
-console.log(string[-6]);
-console.log(string[-9]);
+// console.log(string[-6]);
+// console.log(string[-9]);
 
-console.log(string[-11]);
-console.log(string[-12]);
+// console.log(string[-11]);
+// console.log(string[-12]);
 
-console.log(string[-16]);
-console.log(string[-17]);
-console.log(string[-18]);
-console.log(string[-25]);
+// console.log(string[-16]);
+// console.log(string[-17]);
+// console.log(string[-18]);
+// console.log(string[-25]);
+
+
+let x = 0.1;
+let y = 0.2;
+let z = (x * 10 + y * 10) / 10;
+console.log(z);
+
 
 
 
