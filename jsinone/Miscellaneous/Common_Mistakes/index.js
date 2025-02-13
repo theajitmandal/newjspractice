@@ -120,50 +120,146 @@
         It is a default JavaScript behavior to close a statement automatically at the end of a line.
         Because of this, these two examples will return the same result:
 
-        Example 1
+        Example 1:
             function myFunction(a) {
                 let power = 10 
                 return a * power
             }
 
-        Example 2
-function myFunction(a) {
-  let power = 10;
-  return a * power;
-}
+        Example 2:
+            function myFunction(a) {
+                let power = 10;
+                return a * power;
+            }
 
-JavaScript will also allow you to break a statement into two lines.
+        JavaScript will also allow you to break a statement into two lines.
 
-Because of this, example 3 will also return the same result:
+        Because of this, example 3 will also return the same result:
 
-Example 3
-function myFunction(a) {
-  let
-  power = 10; 
-  return a * power;
-}
+        Example 3:
+            function myFunction(a) {
+                let
+                power = 10; 
+                return a * power;
+            }
 
-But, what will happen if you break the return statement in two lines like this:
+        But, what will happen if you break the return statement in two lines like this:
 
-Example 4
-function myFunction(a) {
-  let
-  power = 10; 
-  return
-  a * power;
-}
+        Example 4:
+            function myFunction(a) {
+                let
+                power = 10; 
+                return
+                a * power;
+            }
 
-The function will return undefined!
+        The function will return undefined!
 
-Why? Because JavaScript thought you meant:
+        Why? Because JavaScript thought you meant:
 
-Example 5
-function myFunction(a) {
-  let
-  power = 10; 
-  return;
-  a * power;
-}
+        Example 5:
+            function myFunction(a) {
+                let
+                power = 10; 
+                return;
+                a * power;
+            }
+
+        Explanation:
+            If a statement is incomplete like:
+
+                let
+            
+            JavaScript will try to complete the statement by reading the next line:
+
+                power = 10;
+            
+            But since this statement is complete:
+
+                return
+
+            JavaScript will automatically close it like this:
+
+                return;
+
+            This happens because closing (ending) statements with semicolon is optional in JavaScript.
+
+            JavaScript will close the return statement at the end of the line, because it is a complete statement.
+
+        Note: Never break a return statement.
+
+    *** Accessing Arrays with Named Indexes ***
+        Many programming languages support arrays with named indexes.
+        Arrays with named indexes are called associative arrays (or hashes).
+
+        JavaScript does not support arrays with named indexes.
+        In JavaScript, arrays use numbered indexes:  
+
+        Example:
+            const person = [];
+            person[0] = "John";
+            person[1] = "Doe";
+            person[2] = 46;
+            person.length;       // person.length will return 3
+            person[0];           // person[0] will return "John"
+
+        In JavaScript, objects use named indexes.
+        If you use a named index, when accessing an array, JavaScript will redefine the array to a standard object.
+
+        After the automatic redefinition, array methods and properties will produce undefined or incorrect results:
+
+        Example:
+            const person = [];
+            person["firstName"] = "John";
+            person["lastName"] = "Doe";
+            person["age"] = 46;
+            person.length;      // person.length will return 0
+            person[0];          // person[0] will return undefined
+
+    *** Ending Definitions with a Comma ***
+        Trailing commas in object and array definition are legal in ECMAScript 5.
+
+        Object Example:
+            person = {firstName:"John", lastName:"Doe", age:46,}
+        
+        Array Example:
+            points = [40, 100, 1, 5, 25, 10,];
+
+        WARNING !!
+            Internet Explorer 8 will crash.
+            JSON does not allow trailing commas.
+
+        JSON:
+            person = {"firstName":"John", "lastName":"Doe", "age":46}
+
+        JSON:
+            points = [40, 100, 1, 5, 25, 10];
+
+    *** Undefined is Not Null ***
+        JavaScript objects, variables, properties, and methods can be undefined.
+        In addition, empty JavaScript objects can have the value null.
+        This can make it a little bit difficult to test if an object is empty.
+        You can test if an object exists by testing if the type is undefined:
+
+        Example:
+            if (typeof myObj === "undefined") 
+        
+        But you cannot test if an object is null, because this will throw an error if the object is undefined:
+
+        Incorrect:
+            if (myObj === null) 
+            
+        To solve this problem, you must test if an object is not null, and not undefined.
+
+        But this can still throw an error:
+
+        Incorrect:
+            if (myObj !== null && typeof myObj !== "undefined") 
+
+        Because of this, you must test for not undefined before you can test for not null:
+
+        Correct:
+            if (typeof myObj !== "undefined" && myObj !== null) 
 
 
 
