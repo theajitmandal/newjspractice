@@ -1160,6 +1160,8 @@
 // console.log(string[-25]);
 
 
+let p = 0.1;
+
 let x = 0.1;
 let y = 0.2;
 let z = (x * 10 + y * 10) / 10;
